@@ -1,0 +1,17 @@
+D:\project\MartManagementSystem\MartManagementSystem\bin\Debug\MartManagementSystem.exe.config
+D:\project\MartManagementSystem\MartManagementSystem\bin\Debug\MartManagementSystem.exe
+D:\project\MartManagementSystem\MartManagementSystem\bin\Debug\MartManagementSystem.pdb
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.AssemblyReference.cache
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.Form1.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.Properties.Resources.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.GenerateResource.cache
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.CoreCompileInputs.cache
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.exe
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.pdb
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.exe.config
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.RegisterForm.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.LayoutForm.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.CategoryForm.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.SizeForm.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.BrandForm.resources
+D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.ProductForm.resources
