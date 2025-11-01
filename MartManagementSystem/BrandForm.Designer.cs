@@ -63,7 +63,7 @@
             this.panel3.Location = new System.Drawing.Point(20, 287);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10);
-            this.panel3.Size = new System.Drawing.Size(1370, 419);
+            this.panel3.Size = new System.Drawing.Size(886, 258);
             this.panel3.TabIndex = 9;
             // 
             // panel4
@@ -72,7 +72,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(10, 10);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1346, 395);
+            this.panel4.Size = new System.Drawing.Size(862, 234);
             this.panel4.TabIndex = 2;
             // 
             // dgvData
@@ -129,7 +129,7 @@
             this.dgvData.RowTemplate.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvData.ShowEditingIcon = false;
-            this.dgvData.Size = new System.Drawing.Size(1346, 395);
+            this.dgvData.Size = new System.Drawing.Size(862, 234);
             this.dgvData.TabIndex = 1;
             // 
             // panel2
@@ -140,7 +140,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(20, 233);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1370, 54);
+            this.panel2.Size = new System.Drawing.Size(886, 54);
             this.panel2.TabIndex = 8;
             // 
             // btnDel
@@ -152,7 +152,7 @@
             this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(1240, 20);
+            this.btnDel.Location = new System.Drawing.Point(756, 20);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(114, 28);
             this.btnDel.TabIndex = 0;
@@ -168,7 +168,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(1110, 20);
+            this.btnEdit.Location = new System.Drawing.Point(626, 20);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(114, 28);
             this.btnEdit.TabIndex = 0;
@@ -199,7 +199,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1370, 213);
+            this.panel1.Size = new System.Drawing.Size(886, 213);
             this.panel1.TabIndex = 7;
             // 
             // txtId
@@ -258,7 +258,7 @@
             this.btnUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUp.ForeColor = System.Drawing.Color.White;
-            this.btnUp.Location = new System.Drawing.Point(1106, 165);
+            this.btnUp.Location = new System.Drawing.Point(622, 165);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(114, 28);
             this.btnUp.TabIndex = 0;
@@ -274,7 +274,7 @@
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(1236, 165);
+            this.btnNew.Location = new System.Drawing.Point(752, 165);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(114, 28);
             this.btnNew.TabIndex = 0;
@@ -285,7 +285,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1410, 726);
+            this.ClientSize = new System.Drawing.Size(926, 565);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

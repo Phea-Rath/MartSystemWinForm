@@ -15,3 +15,28 @@ D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSys
 D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.SizeForm.resources
 D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.BrandForm.resources
 D:\project\MartManagementSystem\MartManagementSystem\obj\Debug\MartManagementSystem.ProductForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\bin\Debug\MartManagementSystem.exe.config
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\bin\Debug\MartManagementSystem.exe
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\bin\Debug\MartManagementSystem.pdb
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.AssemblyReference.cache
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.exe.config
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.BrandForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.CategoryForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.Form1.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.LayoutForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.ProductForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.Properties.Resources.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.RegisterForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.SizeForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.GenerateResource.cache
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.CoreCompileInputs.cache
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.exe
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.pdb
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.ProductSelectionForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.PurchaseForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.SupplierForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.InventoryForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.RoleForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.PermissionForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.UserForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.OrderForm.resources

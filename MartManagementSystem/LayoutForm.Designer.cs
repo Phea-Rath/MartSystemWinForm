@@ -38,18 +38,18 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
             this.pProduct = new System.Windows.Forms.Panel();
             this.btnSize = new System.Windows.Forms.Button();
             this.btnBrand = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pPurchase = new System.Windows.Forms.Panel();
+            this.btnSupplier = new System.Windows.Forms.Button();
+            this.btnPurchase = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnInven = new System.Windows.Forms.Button();
             this.pSetting = new System.Windows.Forms.Panel();
             this.btnPermission = new System.Windows.Forms.Button();
             this.btnRole = new System.Windows.Forms.Button();
@@ -62,18 +62,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.pContent = new System.Windows.Forms.Panel();
             this.timerSetting = new System.Windows.Forms.Timer(this.components);
             this.timerProduct = new System.Windows.Forms.Timer(this.components);
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timerPurchase = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pProduct.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.pPurchase.SuspendLayout();
             this.panel9.SuspendLayout();
             this.pSetting.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -125,7 +125,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Controls.Add(this.panel6);
             this.flowLayoutPanel1.Controls.Add(this.pProduct);
-            this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Controls.Add(this.pPurchase);
             this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.pSetting);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -134,7 +134,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 748);
             this.flowLayoutPanel1.TabIndex = 2;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel7
             // 
@@ -185,33 +184,33 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button3);
+            this.panel6.Controls.Add(this.btnOrder);
             this.panel6.Location = new System.Drawing.Point(0, 40);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 40);
             this.panel6.TabIndex = 3;
             // 
-            // button3
+            // btnOrder
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(200, 40);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Orders";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrder.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnOrder.FlatAppearance.BorderSize = 0;
+            this.btnOrder.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrder.ForeColor = System.Drawing.Color.Black;
+            this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
+            this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrder.Location = new System.Drawing.Point(0, 0);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(0);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnOrder.Size = new System.Drawing.Size(200, 40);
+            this.btnOrder.TabIndex = 0;
+            this.btnOrder.Text = "Orders";
+            this.btnOrder.UseVisualStyleBackColor = true;
             // 
             // pProduct
             // 
@@ -310,56 +309,67 @@
             this.btnProduct.UseVisualStyleBackColor = true;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
-            // panel8
+            // pPurchase
             // 
-            this.panel8.Controls.Add(this.button5);
-            this.panel8.Controls.Add(this.button1);
-            this.panel8.Location = new System.Drawing.Point(0, 120);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 40);
-            this.panel8.TabIndex = 3;
+            this.pPurchase.BackColor = System.Drawing.Color.Transparent;
+            this.pPurchase.Controls.Add(this.btnSupplier);
+            this.pPurchase.Controls.Add(this.btnPurchase);
+            this.pPurchase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pPurchase.ForeColor = System.Drawing.Color.Black;
+            this.pPurchase.Location = new System.Drawing.Point(0, 120);
+            this.pPurchase.Margin = new System.Windows.Forms.Padding(0);
+            this.pPurchase.MaximumSize = new System.Drawing.Size(200, 70);
+            this.pPurchase.MinimumSize = new System.Drawing.Size(200, 40);
+            this.pPurchase.Name = "pPurchase";
+            this.pPurchase.Size = new System.Drawing.Size(200, 40);
+            this.pPurchase.TabIndex = 2;
             // 
-            // button5
+            // btnSupplier
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 40);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 0);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Orders";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSupplier.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSupplier.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSupplier.FlatAppearance.BorderSize = 0;
+            this.btnSupplier.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnSupplier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSupplier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSupplier.ForeColor = System.Drawing.Color.Black;
+            this.btnSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnSupplier.Image")));
+            this.btnSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSupplier.Location = new System.Drawing.Point(0, 37);
+            this.btnSupplier.Name = "btnSupplier";
+            this.btnSupplier.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnSupplier.Size = new System.Drawing.Size(200, 33);
+            this.btnSupplier.TabIndex = 3;
+            this.btnSupplier.Text = "Suppliers";
+            this.btnSupplier.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnPurchase
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(200, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Purchases";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPurchase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPurchase.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPurchase.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPurchase.FlatAppearance.BorderSize = 0;
+            this.btnPurchase.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnPurchase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchase.ForeColor = System.Drawing.Color.Black;
+            this.btnPurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchase.Image")));
+            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPurchase.Location = new System.Drawing.Point(0, 0);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(0);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPurchase.Size = new System.Drawing.Size(200, 37);
+            this.btnPurchase.TabIndex = 0;
+            this.btnPurchase.Text = "Purchases";
+            this.btnPurchase.UseVisualStyleBackColor = true;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.button6);
-            this.panel9.Controls.Add(this.button2);
+            this.panel9.Controls.Add(this.btnInven);
             this.panel9.Location = new System.Drawing.Point(0, 160);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
@@ -381,26 +391,27 @@
             this.button6.Text = "Orders";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnInven
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(200, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Inventory";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnInven.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInven.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInven.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnInven.FlatAppearance.BorderSize = 0;
+            this.btnInven.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnInven.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnInven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInven.ForeColor = System.Drawing.Color.Black;
+            this.btnInven.Image = ((System.Drawing.Image)(resources.GetObject("btnInven.Image")));
+            this.btnInven.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInven.Location = new System.Drawing.Point(0, 0);
+            this.btnInven.Margin = new System.Windows.Forms.Padding(0);
+            this.btnInven.Name = "btnInven";
+            this.btnInven.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnInven.Size = new System.Drawing.Size(200, 40);
+            this.btnInven.TabIndex = 0;
+            this.btnInven.Text = "Inventory";
+            this.btnInven.UseVisualStyleBackColor = true;
+            this.btnInven.Click += new System.EventHandler(this.btnInven_Click);
             // 
             // pSetting
             // 
@@ -545,7 +556,7 @@
             // 
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lbTitle);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
@@ -574,15 +585,15 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // lbTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashbords";
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Location = new System.Drawing.Point(6, 18);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(101, 24);
+            this.lbTitle.TabIndex = 0;
+            this.lbTitle.Text = "Dashbords";
             // 
             // pContent
             // 
@@ -594,7 +605,6 @@
             this.pContent.Name = "pContent";
             this.pContent.Size = new System.Drawing.Size(1406, 766);
             this.pContent.TabIndex = 2;
-            this.pContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // timerSetting
             // 
@@ -605,6 +615,11 @@
             // 
             this.timerProduct.Interval = 10;
             this.timerProduct.Tick += new System.EventHandler(this.timerProduct_Click);
+            // 
+            // timerPurchase
+            // 
+            this.timerPurchase.Interval = 10;
+            this.timerPurchase.Tick += new System.EventHandler(this.timerPurchase_Click);
             // 
             // LayoutForm
             // 
@@ -622,7 +637,7 @@
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.pProduct.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            this.pPurchase.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.pSetting.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -643,7 +658,7 @@
         private System.Windows.Forms.Panel pContent;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -661,19 +676,19 @@
         private System.Windows.Forms.Button btnBrand;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnProduct;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnInven;
         private System.Windows.Forms.Timer timerProduct;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button5;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel pPurchase;
+        private System.Windows.Forms.Button btnSupplier;
+        private System.Windows.Forms.Button btnPurchase;
+        private System.Windows.Forms.Timer timerPurchase;
     }
 }
