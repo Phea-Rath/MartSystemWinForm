@@ -26,7 +26,6 @@ D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\M
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.LayoutForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.ProductForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.Properties.Resources.resources
-D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.RegisterForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.SizeForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.GenerateResource.cache
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.csproj.CoreCompileInputs.cache
@@ -40,3 +39,5 @@ D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\M
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.PermissionForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.UserForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.OrderForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.DashboardForm.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.OrderList.resources

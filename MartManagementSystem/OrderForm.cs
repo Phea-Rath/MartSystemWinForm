@@ -12,9 +12,34 @@ namespace MartManagementSystem
 {
     public partial class OrderForm : Form
     {
+        OrderList orderListForm = new OrderList();
+        public event EventHandler handleOrderList;
         public OrderForm()
         {
             InitializeComponent();
+        }
+
+        public void activeForm(Form form, List<Form> formList)
+        {
+            foreach (Form btn in formList)
+            {
+                if (btn == form)
+                {
+                    btn.Show();
+                }
+                else
+                {
+                    btn.Hide();
+                }
+            }
+        }
+        private void btnOrderList_Click(object sender, EventArgs e)
+        {
+
+            //LayoutForm layoutForm = new LayoutForm();
+            //activeForm(orderListForm, layoutForm.formList);
+            //orderListForm.Show();
+            handleOrderList?.Invoke(this, EventArgs.Empty);
         }
     }
 }

@@ -23,11 +23,13 @@ namespace MartManagementSystem
         UserForm userForm = new UserForm();
         PermissionForm permissionForm = new PermissionForm();
         OrderForm orderForm = new OrderForm();
-        List<Form> formList = new List<Form>();
+        DashboardForm dashboardForm = new DashboardForm();
+        OrderList orderListForm = new OrderList();
+        public List<Form> formList = new List<Form>();
         public LayoutForm()
         {
             InitializeComponent();
-            formList.AddRange(new Form[] { categoryForm, sizeForm, brandForm, productForm, purchaseForm, supplierForm, inventoryForm, roleForm,userForm,permissionForm, orderForm}); 
+            formList.AddRange(new Form[] { categoryForm, sizeForm, brandForm, productForm, purchaseForm, supplierForm, inventoryForm, roleForm, userForm, permissionForm, orderForm, dashboardForm, orderListForm });
 
             foreach (Form form in formList)
             {
@@ -44,7 +46,16 @@ namespace MartManagementSystem
             btnAccount.Click += btnAccount_CLick;
             btnPermission.Click += btnPermission_Click;
             btnOrder.Click += btnOrder_CLick;
+            dashboardForm.Show();
+
+            orderForm.handleOrderList += (s, e) =>
+            {
+                activeForm(orderListForm);
+            };
+
         }
+
+
 
         private void btnOrder_CLick(object sender, EventArgs e)
         {
@@ -76,7 +87,7 @@ namespace MartManagementSystem
             activeForm(supplierForm);
         }
 
-        private void activeForm(Form form)
+        public void activeForm(Form form)
         {
             foreach (Form btn in formList)
             {
@@ -144,7 +155,8 @@ namespace MartManagementSystem
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            
+            lbTitle.Text = "Dashboard";
+            activeForm(dashboardForm);
         }
 
         

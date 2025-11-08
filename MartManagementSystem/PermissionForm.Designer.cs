@@ -45,26 +45,26 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.cbDas = new System.Windows.Forms.CheckBox();
+            this.cbInv = new System.Windows.Forms.CheckBox();
+            this.cbPro = new System.Windows.Forms.CheckBox();
+            this.cbBrand = new System.Windows.Forms.CheckBox();
+            this.cbSize = new System.Windows.Forms.CheckBox();
+            this.cbCat = new System.Windows.Forms.CheckBox();
+            this.cbPur = new System.Windows.Forms.CheckBox();
+            this.cbSup = new System.Windows.Forms.CheckBox();
+            this.cbOrd = new System.Windows.Forms.CheckBox();
+            this.cbOrdl = new System.Windows.Forms.CheckBox();
+            this.cbSett = new System.Windows.Forms.CheckBox();
+            this.cbAcc = new System.Windows.Forms.CheckBox();
+            this.cbRole = new System.Windows.Forms.CheckBox();
+            this.cbPer = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbUser = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -104,20 +104,20 @@
             this.tableLayoutPanel1.Controls.Add(this.label12, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox6, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox7, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox8, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox9, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox10, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox11, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox12, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox13, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox14, 1, 13);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox15, 1, 14);
+            this.tableLayoutPanel1.Controls.Add(this.cbDas, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbInv, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cbPro, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.cbBrand, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbSize, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cbCat, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.cbPur, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.cbSup, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.cbOrd, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.cbOrdl, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.cbSett, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.cbAcc, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.cbRole, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.cbPer, 1, 14);
             this.tableLayoutPanel1.Controls.Add(this.label20, 0, 13);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
@@ -324,6 +324,7 @@
             this.cbAllAllow.Text = "Allow All";
             this.cbAllAllow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbAllAllow.UseVisualStyleBackColor = false;
+            this.cbAllAllow.CheckedChanged += new System.EventHandler(this.cbAllAllow_CheckedChanged);
             // 
             // label5
             // 
@@ -392,250 +393,236 @@
             this.label13.Text = "OrderList";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // checkBox5
+            // cbDas
             // 
-            this.checkBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbDas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox5.Location = new System.Drawing.Point(934, 40);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox5.Size = new System.Drawing.Size(118, 29);
-            this.checkBox5.TabIndex = 1;
-            this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbDas.AutoSize = true;
+            this.cbDas.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbDas.Location = new System.Drawing.Point(934, 40);
+            this.cbDas.Margin = new System.Windows.Forms.Padding(0);
+            this.cbDas.Name = "cbDas";
+            this.cbDas.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbDas.Size = new System.Drawing.Size(118, 29);
+            this.cbDas.TabIndex = 1;
+            this.cbDas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbDas.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cbInv
             // 
-            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbInv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(934, 69);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox1.Size = new System.Drawing.Size(118, 29);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbInv.AutoSize = true;
+            this.cbInv.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbInv.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbInv.Location = new System.Drawing.Point(934, 69);
+            this.cbInv.Margin = new System.Windows.Forms.Padding(0);
+            this.cbInv.Name = "cbInv";
+            this.cbInv.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbInv.Size = new System.Drawing.Size(118, 29);
+            this.cbInv.TabIndex = 1;
+            this.cbInv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbInv.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // cbPro
             // 
-            this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbPro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Black;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(934, 98);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox2.Size = new System.Drawing.Size(118, 29);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = false;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbPro.AutoSize = true;
+            this.cbPro.BackColor = System.Drawing.Color.Black;
+            this.cbPro.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbPro.Location = new System.Drawing.Point(934, 98);
+            this.cbPro.Margin = new System.Windows.Forms.Padding(0);
+            this.cbPro.Name = "cbPro";
+            this.cbPro.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbPro.Size = new System.Drawing.Size(118, 29);
+            this.cbPro.TabIndex = 1;
+            this.cbPro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbPro.UseVisualStyleBackColor = false;
             // 
-            // checkBox4
+            // cbBrand
             // 
-            this.checkBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbBrand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Location = new System.Drawing.Point(934, 127);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox4.Size = new System.Drawing.Size(118, 29);
-            this.checkBox4.TabIndex = 1;
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbBrand.AutoSize = true;
+            this.cbBrand.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbBrand.Location = new System.Drawing.Point(934, 127);
+            this.cbBrand.Margin = new System.Windows.Forms.Padding(0);
+            this.cbBrand.Name = "cbBrand";
+            this.cbBrand.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbBrand.Size = new System.Drawing.Size(118, 29);
+            this.cbBrand.TabIndex = 1;
+            this.cbBrand.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbBrand.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // cbSize
             // 
-            this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbSize.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox6.Location = new System.Drawing.Point(934, 156);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox6.Size = new System.Drawing.Size(118, 29);
-            this.checkBox6.TabIndex = 1;
-            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox6.UseVisualStyleBackColor = false;
-            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbSize.AutoSize = true;
+            this.cbSize.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbSize.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbSize.Location = new System.Drawing.Point(934, 156);
+            this.cbSize.Margin = new System.Windows.Forms.Padding(0);
+            this.cbSize.Name = "cbSize";
+            this.cbSize.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbSize.Size = new System.Drawing.Size(118, 29);
+            this.cbSize.TabIndex = 1;
+            this.cbSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbSize.UseVisualStyleBackColor = false;
             // 
-            // checkBox7
+            // cbCat
             // 
-            this.checkBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbCat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox7.Location = new System.Drawing.Point(934, 185);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox7.Size = new System.Drawing.Size(118, 29);
-            this.checkBox7.TabIndex = 1;
-            this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox7.UseVisualStyleBackColor = true;
-            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbCat.AutoSize = true;
+            this.cbCat.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbCat.Location = new System.Drawing.Point(934, 185);
+            this.cbCat.Margin = new System.Windows.Forms.Padding(0);
+            this.cbCat.Name = "cbCat";
+            this.cbCat.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbCat.Size = new System.Drawing.Size(118, 29);
+            this.cbCat.TabIndex = 1;
+            this.cbCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbCat.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // cbPur
             // 
-            this.checkBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbPur.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.BackColor = System.Drawing.Color.Black;
-            this.checkBox8.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox8.Location = new System.Drawing.Point(934, 214);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox8.Size = new System.Drawing.Size(118, 29);
-            this.checkBox8.TabIndex = 1;
-            this.checkBox8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox8.UseVisualStyleBackColor = false;
-            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbPur.AutoSize = true;
+            this.cbPur.BackColor = System.Drawing.Color.Black;
+            this.cbPur.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbPur.Location = new System.Drawing.Point(934, 214);
+            this.cbPur.Margin = new System.Windows.Forms.Padding(0);
+            this.cbPur.Name = "cbPur";
+            this.cbPur.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbPur.Size = new System.Drawing.Size(118, 29);
+            this.cbPur.TabIndex = 1;
+            this.cbPur.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbPur.UseVisualStyleBackColor = false;
             // 
-            // checkBox9
+            // cbSup
             // 
-            this.checkBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbSup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox9.Location = new System.Drawing.Point(934, 243);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox9.Size = new System.Drawing.Size(118, 29);
-            this.checkBox9.TabIndex = 1;
-            this.checkBox9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbSup.AutoSize = true;
+            this.cbSup.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbSup.Location = new System.Drawing.Point(934, 243);
+            this.cbSup.Margin = new System.Windows.Forms.Padding(0);
+            this.cbSup.Name = "cbSup";
+            this.cbSup.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbSup.Size = new System.Drawing.Size(118, 29);
+            this.cbSup.TabIndex = 1;
+            this.cbSup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbSup.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // cbOrd
             // 
-            this.checkBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbOrd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.BackColor = System.Drawing.Color.Black;
-            this.checkBox10.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox10.Location = new System.Drawing.Point(934, 272);
-            this.checkBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox10.Size = new System.Drawing.Size(118, 29);
-            this.checkBox10.TabIndex = 1;
-            this.checkBox10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox10.UseVisualStyleBackColor = false;
-            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbOrd.AutoSize = true;
+            this.cbOrd.BackColor = System.Drawing.Color.Black;
+            this.cbOrd.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbOrd.Location = new System.Drawing.Point(934, 272);
+            this.cbOrd.Margin = new System.Windows.Forms.Padding(0);
+            this.cbOrd.Name = "cbOrd";
+            this.cbOrd.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbOrd.Size = new System.Drawing.Size(118, 29);
+            this.cbOrd.TabIndex = 1;
+            this.cbOrd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbOrd.UseVisualStyleBackColor = false;
             // 
-            // checkBox11
+            // cbOrdl
             // 
-            this.checkBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbOrdl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox11.Location = new System.Drawing.Point(934, 301);
-            this.checkBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox11.Size = new System.Drawing.Size(118, 29);
-            this.checkBox11.TabIndex = 1;
-            this.checkBox11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbOrdl.AutoSize = true;
+            this.cbOrdl.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbOrdl.Location = new System.Drawing.Point(934, 301);
+            this.cbOrdl.Margin = new System.Windows.Forms.Padding(0);
+            this.cbOrdl.Name = "cbOrdl";
+            this.cbOrdl.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbOrdl.Size = new System.Drawing.Size(118, 29);
+            this.cbOrdl.TabIndex = 1;
+            this.cbOrdl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbOrdl.UseVisualStyleBackColor = true;
             // 
-            // checkBox12
+            // cbSett
             // 
-            this.checkBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbSett.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.BackColor = System.Drawing.Color.Black;
-            this.checkBox12.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox12.Location = new System.Drawing.Point(934, 330);
-            this.checkBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox12.Size = new System.Drawing.Size(118, 29);
-            this.checkBox12.TabIndex = 1;
-            this.checkBox12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox12.UseVisualStyleBackColor = false;
-            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbSett.AutoSize = true;
+            this.cbSett.BackColor = System.Drawing.Color.Black;
+            this.cbSett.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbSett.Location = new System.Drawing.Point(934, 330);
+            this.cbSett.Margin = new System.Windows.Forms.Padding(0);
+            this.cbSett.Name = "cbSett";
+            this.cbSett.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbSett.Size = new System.Drawing.Size(118, 29);
+            this.cbSett.TabIndex = 1;
+            this.cbSett.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbSett.UseVisualStyleBackColor = false;
             // 
-            // checkBox13
+            // cbAcc
             // 
-            this.checkBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox13.Location = new System.Drawing.Point(934, 359);
-            this.checkBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox13.Size = new System.Drawing.Size(118, 29);
-            this.checkBox13.TabIndex = 1;
-            this.checkBox13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox13.UseVisualStyleBackColor = true;
-            this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbAcc.AutoSize = true;
+            this.cbAcc.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbAcc.Location = new System.Drawing.Point(934, 359);
+            this.cbAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.cbAcc.Name = "cbAcc";
+            this.cbAcc.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbAcc.Size = new System.Drawing.Size(118, 29);
+            this.cbAcc.TabIndex = 1;
+            this.cbAcc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbAcc.UseVisualStyleBackColor = true;
             // 
-            // checkBox14
+            // cbRole
             // 
-            this.checkBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.BackColor = System.Drawing.Color.Gainsboro;
-            this.checkBox14.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox14.Location = new System.Drawing.Point(934, 388);
-            this.checkBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox14.Size = new System.Drawing.Size(118, 29);
-            this.checkBox14.TabIndex = 1;
-            this.checkBox14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox14.UseVisualStyleBackColor = false;
-            this.checkBox14.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbRole.AutoSize = true;
+            this.cbRole.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbRole.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbRole.Location = new System.Drawing.Point(934, 388);
+            this.cbRole.Margin = new System.Windows.Forms.Padding(0);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbRole.Size = new System.Drawing.Size(118, 29);
+            this.cbRole.TabIndex = 1;
+            this.cbRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbRole.UseVisualStyleBackColor = false;
             // 
-            // checkBox15
+            // cbPer
             // 
-            this.checkBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.cbPer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox15.Location = new System.Drawing.Point(934, 417);
-            this.checkBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.checkBox15.Size = new System.Drawing.Size(118, 29);
-            this.checkBox15.TabIndex = 1;
-            this.checkBox15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox15.UseVisualStyleBackColor = true;
-            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            this.cbPer.AutoSize = true;
+            this.cbPer.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbPer.Location = new System.Drawing.Point(934, 417);
+            this.cbPer.Margin = new System.Windows.Forms.Padding(0);
+            this.cbPer.Name = "cbPer";
+            this.cbPer.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
+            this.cbPer.Size = new System.Drawing.Size(118, 29);
+            this.cbPer.TabIndex = 1;
+            this.cbPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cbPer.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -691,7 +678,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbUser);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(20, 20);
@@ -699,14 +686,14 @@
             this.panel1.Size = new System.Drawing.Size(1072, 105);
             this.panel1.TabIndex = 13;
             // 
-            // comboBox1
+            // cbUser
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(38, 61);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(402, 23);
-            this.comboBox1.TabIndex = 2;
+            this.cbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUser.FormattingEnabled = true;
+            this.cbUser.Location = new System.Drawing.Point(38, 61);
+            this.cbUser.Name = "cbUser";
+            this.cbUser.Size = new System.Drawing.Size(402, 23);
+            this.cbUser.TabIndex = 2;
             // 
             // label3
             // 
@@ -760,26 +747,26 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox cbDas;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbUser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox cbInv;
+        private System.Windows.Forms.CheckBox cbPro;
+        private System.Windows.Forms.CheckBox cbBrand;
+        private System.Windows.Forms.CheckBox cbSize;
+        private System.Windows.Forms.CheckBox cbCat;
+        private System.Windows.Forms.CheckBox cbPur;
+        private System.Windows.Forms.CheckBox cbSup;
+        private System.Windows.Forms.CheckBox cbOrd;
+        private System.Windows.Forms.CheckBox cbOrdl;
+        private System.Windows.Forms.CheckBox cbSett;
+        private System.Windows.Forms.CheckBox cbAcc;
+        private System.Windows.Forms.CheckBox cbRole;
+        private System.Windows.Forms.CheckBox cbPer;
     }
 }

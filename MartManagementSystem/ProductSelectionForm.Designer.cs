@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.cbSupplier = new System.Windows.Forms.ComboBox();
-            this.txtDis = new System.Windows.Forms.TextBox();
-            this.txtSupTotal = new System.Windows.Forms.TextBox();
+            this.cbProduct = new System.Windows.Forms.ComboBox();
+            this.txtCost = new System.Windows.Forms.TextBox();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtFee = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,11 +48,11 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.cbSupplier);
-            this.panel1.Controls.Add(this.txtDis);
-            this.panel1.Controls.Add(this.txtSupTotal);
+            this.panel1.Controls.Add(this.cbProduct);
+            this.panel1.Controls.Add(this.txtCost);
+            this.panel1.Controls.Add(this.txtUnitPrice);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.txtFee);
+            this.panel1.Controls.Add(this.txtQuantity);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
@@ -95,32 +95,34 @@
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // cbSupplier
+            // cbProduct
             // 
-            this.cbSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSupplier.FormattingEnabled = true;
-            this.cbSupplier.Location = new System.Drawing.Point(29, 80);
-            this.cbSupplier.Name = "cbSupplier";
-            this.cbSupplier.Size = new System.Drawing.Size(171, 23);
-            this.cbSupplier.TabIndex = 20;
+            this.cbProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProduct.FormattingEnabled = true;
+            this.cbProduct.Location = new System.Drawing.Point(29, 80);
+            this.cbProduct.Name = "cbProduct";
+            this.cbProduct.Size = new System.Drawing.Size(171, 23);
+            this.cbProduct.TabIndex = 20;
+            this.cbProduct.SelectedIndexChanged += new System.EventHandler(this.cbProduct_SelectedIndexChanged);
             // 
-            // txtDis
+            // txtCost
             // 
-            this.txtDis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDis.Location = new System.Drawing.Point(223, 145);
-            this.txtDis.Name = "txtDis";
-            this.txtDis.Size = new System.Drawing.Size(175, 22);
-            this.txtDis.TabIndex = 18;
+            this.txtCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCost.Location = new System.Drawing.Point(223, 145);
+            this.txtCost.Name = "txtCost";
+            this.txtCost.Size = new System.Drawing.Size(175, 22);
+            this.txtCost.TabIndex = 18;
             // 
-            // txtSupTotal
+            // txtUnitPrice
             // 
-            this.txtSupTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupTotal.Location = new System.Drawing.Point(223, 80);
-            this.txtSupTotal.Name = "txtSupTotal";
-            this.txtSupTotal.ReadOnly = true;
-            this.txtSupTotal.Size = new System.Drawing.Size(175, 22);
-            this.txtSupTotal.TabIndex = 19;
+            this.txtUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitPrice.Location = new System.Drawing.Point(223, 80);
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.ReadOnly = true;
+            this.txtUnitPrice.Size = new System.Drawing.Size(175, 22);
+            this.txtUnitPrice.TabIndex = 19;
             // 
             // label10
             // 
@@ -132,13 +134,13 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Cost ($):";
             // 
-            // txtFee
+            // txtQuantity
             // 
-            this.txtFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFee.Location = new System.Drawing.Point(29, 145);
-            this.txtFee.Name = "txtFee";
-            this.txtFee.Size = new System.Drawing.Size(171, 22);
-            this.txtFee.TabIndex = 14;
+            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(29, 145);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(171, 22);
+            this.txtQuantity.TabIndex = 14;
             // 
             // label8
             // 
@@ -202,11 +204,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cbSupplier;
-        private System.Windows.Forms.TextBox txtDis;
-        private System.Windows.Forms.TextBox txtSupTotal;
+        private System.Windows.Forms.ComboBox cbProduct;
+        private System.Windows.Forms.TextBox txtCost;
+        private System.Windows.Forms.TextBox txtUnitPrice;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtFee;
+        private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
