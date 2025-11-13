@@ -92,12 +92,63 @@ namespace MartManagementSystem
         }
 
 
+        public static User GetUserById(int id)
+        {
+            User user = null;
+            SqlConnection conn = SqlServerConnection.GetConnection();
+            string query = @"
+    SELECT u.user_id, u.user_name, u.phone_number, u.email, u.image, 
+           u.password, u.role_id, u.is_active, u.login_at, u.created_by,
+           u.created_at,u.updated_at,
+           r.role_name
+    FROM Users u
+    LEFT JOIN Roles r ON u.role_id = r.role_id
+    WHERE u.is_deleted = 0 AND user_id = @id;
+    ";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataReader r = cmd.ExecuteReader();
+
+            if (r.Read())
+            {
+                user = new User()
+                {
+                    UserId = r.GetInt32(0),
+                    UserName = r.GetString(1),
+                    PhoneNumber = r.IsDBNull(2) ? null : r.GetString(2),
+                    Email = r.IsDBNull(3) ? null : r.GetString(3),
+                    ImageUrl = r.IsDBNull(4) ? null : r.GetString(4),
+                    Password = r.GetString(5),
+                    RoleId = r.IsDBNull(6) ? 0 : r.GetInt32(6),
+                    IsActive = r.GetBoolean(7),
+                    LoginAt = r.IsDBNull(8) ? (DateTime?)null : r.GetDateTime(8),
+                    CreatedBy = r.IsDBNull(9) ? 0 : r.GetInt32(9),
+                    UpdatedAt = r.IsDBNull(10) ? (DateTime?)null : r.GetDateTime(10),
+                    CreatedAt = r.IsDBNull(11) ? (DateTime?)null : r.GetDateTime(11),
+
+                    Role = new Role()
+                    {
+                        RoleId = r.IsDBNull(6) ? 0 : r.GetInt32(6),
+                        RoleName = r.IsDBNull(12) ? null : r.GetString(12)
+                    }
+                };
+            }
+
+            r.Close();
+            conn.Close();
+            return user;
+        }
+
         // INSERT
-        public bool InsertUser(User u)
+        public int InsertUser(User u)
         {
             SqlConnection conn = SqlServerConnection.GetConnection();
             string query = @"INSERT INTO Users (user_name, phone_number, email, image, password, role_id, created_by, is_active)
-                         VALUES (@name, @phone, @email, @image, @pass, @role, @createdBy, 1)";
+                         VALUES (@name, @phone, @email, @image, @pass, @role, @createdBy, 1);
+                         SELECT SCOPE_IDENTITY();";
+
+
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@name", u.UserName);
             cmd.Parameters.AddWithValue("@phone", (object)u.PhoneNumber ?? DBNull.Value);
@@ -107,7 +158,8 @@ namespace MartManagementSystem
             cmd.Parameters.AddWithValue("@role", (object)u.RoleId ?? DBNull.Value);
             cmd.Parameters.AddWithValue("@createdBy", u.CreatedBy);
 
-            return cmd.ExecuteNonQuery() > 0;
+            int id =Convert.ToInt32( cmd.ExecuteScalar());
+            return id;
         }
 
         // UPDATE
@@ -116,7 +168,7 @@ namespace MartManagementSystem
             
             SqlConnection conn = SqlServerConnection.GetConnection();
             string query = @"UPDATE Users SET user_name=@name, phone_number=@phone, email=@email, 
-                         image=@image, role_id=@role, updated_at=@updated
+                         image=@image, role_id=@role, updated_at=@updated, password=@password
                          WHERE user_id=@id";
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@name", u.UserName);
@@ -125,9 +177,22 @@ namespace MartManagementSystem
             cmd.Parameters.AddWithValue("@image", (object)u.ImageUrl ?? DBNull.Value);
             cmd.Parameters.AddWithValue("@role", (object)u.RoleId ?? DBNull.Value);
             cmd.Parameters.AddWithValue("@updated", DateTime.Now);
+            cmd.Parameters.AddWithValue("@password", u.Password);
             cmd.Parameters.AddWithValue("@id", u.UserId);
 
             return cmd.ExecuteNonQuery() > 0;
+        }
+
+        public static bool DisableUser(int id,bool check)
+        {
+
+            SqlConnection conn = SqlServerConnection.GetConnection();
+            string query = $"UPDATE Users SET is_active = {(check?1:0)} WHERE user_id=@id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            if (check)Services.ShowAlert("Enabled Account!");
+            else Services.ShowAlert("Disabled Account!");
+                return cmd.ExecuteNonQuery() > 0;
         }
 
         // DELETE (Soft Delete)

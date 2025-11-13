@@ -31,11 +31,29 @@ namespace MartManagementSystem
             cbSupplier.SelectedIndex = -1;
         }
 
+        private void dgvData_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            if (dgvData.Columns.Contains("No"))
+            {
+                dgvData.Rows[e.RowIndex].Cells["No"].Value = (e.RowIndex + 1).ToString();
+            }
+        }
+
         private void LoadData()
         {
             dgvData.DataSource = null;
             var purchaseList = Purchase.GetAllPurchases();
             dgvData.DataSource = purchaseList;
+            if (!dgvData.Columns.Contains("No"))
+            {
+                DataGridViewTextBoxColumn col = new DataGridViewTextBoxColumn
+                {
+                    Name = "No",
+                    HeaderText = "#",
+                    Width = 50
+                };
+                dgvData.Columns.Insert(0, col);
+            }
             dgvData.Columns["Supplier"].Visible = false;
             dgvData.Columns["PurchaseId"].Visible = false;
             dgvData.Columns["SupplierId"].Visible = false;
@@ -66,6 +84,7 @@ namespace MartManagementSystem
             dgvItem.Columns["ImageUrl"].Visible = false;
             dgvItem.Columns["Product"].Visible = false;
             dgvItem.Columns["Purchase"].Visible = false;
+            dgvItem.Columns["PurchaseId"].Visible = false;
             dgvItem.Columns["Tax"].Visible = false;
             dgvItem.Columns["IsDeleted"].Visible = false;
             dgvItem.Columns["ProductCode"].Visible = false;
@@ -200,7 +219,6 @@ namespace MartManagementSystem
             dgvItem.Columns["ImageUrl"].Visible = false;
             dgvItem.Columns["Product"].Visible = false;
             dgvItem.Columns["Purchase"].Visible = false;
-            dgvItem.Columns["Tax"].Visible = false;
             dgvItem.Columns["IsDeleted"].Visible = false;
             dgvItem.Columns["ProductCode"].Visible = false;
             dgvItem.Columns["Discount"].Visible = false;

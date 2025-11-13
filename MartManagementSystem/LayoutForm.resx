@@ -221,7 +221,7 @@
   <data name="btnPurchase.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAATpJREFUOE/t0zEo7lEYx/GPy607qDtc6ZayMOmalMEipTsYCJMiKcmg7igWcSdZ
+        DAAACwwBP0AiyAAAATpJREFUOE/t0zEo7lEYx/GPy607qDtc6ZayMOmalMEipTsYCJMiKcmg7igWcSdZ
         bLcbpQxSLAZJ6ZabWERJymo23sVER+e9Hae/N6/5/dbz75yn5/n9T7/nHKpktGMSU2+IIXzMBQK1mMYq
         /sZ13lwUK9jJxb5gHwvYi6J5Y7m4S8W6cIn+uP+Nx3eED5jDMZqTHwTBUXRUEDeh8QCLqEvESoKhKNCJ
         bZxgM6tLOQ+fr3k2EgRncYRddMd8ML4lqy3xLFjEt3j8X2hN8o3R5/okl/Kq4Gc0JPtPmMEVepJ8zkWe
@@ -3106,7 +3106,7 @@
         5PfSoUNH6eL/B3TQ7r4bKoUhAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbProfile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF6s
         /W3WNDmKLIrWdE7truGdldW5B3U6u+qOL+/iw8AwUMTzZvcPW+4uIQQIfSB5ePztP/7z33/+xz//+8//

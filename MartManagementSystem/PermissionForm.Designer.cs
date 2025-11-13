@@ -40,7 +40,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cbAllAllow = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,22 +47,24 @@
             this.cbDas = new System.Windows.Forms.CheckBox();
             this.cbInv = new System.Windows.Forms.CheckBox();
             this.cbPro = new System.Windows.Forms.CheckBox();
-            this.cbBrand = new System.Windows.Forms.CheckBox();
-            this.cbSize = new System.Windows.Forms.CheckBox();
-            this.cbCat = new System.Windows.Forms.CheckBox();
             this.cbPur = new System.Windows.Forms.CheckBox();
-            this.cbSup = new System.Windows.Forms.CheckBox();
             this.cbOrd = new System.Windows.Forms.CheckBox();
-            this.cbOrdl = new System.Windows.Forms.CheckBox();
             this.cbSett = new System.Windows.Forms.CheckBox();
-            this.cbAcc = new System.Windows.Forms.CheckBox();
-            this.cbRole = new System.Windows.Forms.CheckBox();
-            this.cbPer = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbActive = new System.Windows.Forms.CheckBox();
             this.cbUser = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
@@ -99,7 +100,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.cbAllAllow, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label12, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
@@ -107,18 +107,19 @@
             this.tableLayoutPanel1.Controls.Add(this.cbDas, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.cbInv, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.cbPro, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbBrand, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.cbSize, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.cbCat, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.cbPur, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.cbSup, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.cbOrd, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.cbOrdl, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.cbSett, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.cbAcc, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.cbRole, 1, 13);
-            this.tableLayoutPanel1.Controls.Add(this.cbPer, 1, 14);
             this.tableLayoutPanel1.Controls.Add(this.label20, 0, 13);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label15, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label16, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label21, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label22, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.label23, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.label24, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.label26, 1, 14);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -305,27 +306,6 @@
             this.label6.Text = "Dashboard";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cbAllAllow
-            // 
-            this.cbAllAllow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbAllAllow.AutoSize = true;
-            this.cbAllAllow.BackColor = System.Drawing.Color.DodgerBlue;
-            this.cbAllAllow.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbAllAllow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbAllAllow.ForeColor = System.Drawing.Color.White;
-            this.cbAllAllow.Location = new System.Drawing.Point(934, 0);
-            this.cbAllAllow.Margin = new System.Windows.Forms.Padding(0);
-            this.cbAllAllow.Name = "cbAllAllow";
-            this.cbAllAllow.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbAllAllow.Size = new System.Drawing.Size(118, 40);
-            this.cbAllAllow.TabIndex = 1;
-            this.cbAllAllow.Text = "Allow All";
-            this.cbAllAllow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbAllAllow.UseVisualStyleBackColor = false;
-            this.cbAllAllow.CheckedChanged += new System.EventHandler(this.cbAllAllow_CheckedChanged);
-            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -408,6 +388,7 @@
             this.cbDas.TabIndex = 1;
             this.cbDas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbDas.UseVisualStyleBackColor = true;
+            this.cbDas.CheckedChanged += new System.EventHandler(this.cbDas_CheckedChanged);
             // 
             // cbInv
             // 
@@ -425,6 +406,7 @@
             this.cbInv.TabIndex = 1;
             this.cbInv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbInv.UseVisualStyleBackColor = false;
+            this.cbInv.CheckedChanged += new System.EventHandler(this.cbInv_CheckedChanged);
             // 
             // cbPro
             // 
@@ -442,55 +424,7 @@
             this.cbPro.TabIndex = 1;
             this.cbPro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbPro.UseVisualStyleBackColor = false;
-            // 
-            // cbBrand
-            // 
-            this.cbBrand.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbBrand.AutoSize = true;
-            this.cbBrand.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbBrand.Location = new System.Drawing.Point(934, 127);
-            this.cbBrand.Margin = new System.Windows.Forms.Padding(0);
-            this.cbBrand.Name = "cbBrand";
-            this.cbBrand.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbBrand.Size = new System.Drawing.Size(118, 29);
-            this.cbBrand.TabIndex = 1;
-            this.cbBrand.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbBrand.UseVisualStyleBackColor = true;
-            // 
-            // cbSize
-            // 
-            this.cbSize.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbSize.AutoSize = true;
-            this.cbSize.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbSize.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbSize.Location = new System.Drawing.Point(934, 156);
-            this.cbSize.Margin = new System.Windows.Forms.Padding(0);
-            this.cbSize.Name = "cbSize";
-            this.cbSize.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbSize.Size = new System.Drawing.Size(118, 29);
-            this.cbSize.TabIndex = 1;
-            this.cbSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbSize.UseVisualStyleBackColor = false;
-            // 
-            // cbCat
-            // 
-            this.cbCat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbCat.AutoSize = true;
-            this.cbCat.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbCat.Location = new System.Drawing.Point(934, 185);
-            this.cbCat.Margin = new System.Windows.Forms.Padding(0);
-            this.cbCat.Name = "cbCat";
-            this.cbCat.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbCat.Size = new System.Drawing.Size(118, 29);
-            this.cbCat.TabIndex = 1;
-            this.cbCat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbCat.UseVisualStyleBackColor = true;
+            this.cbPro.CheckedChanged += new System.EventHandler(this.cbPro_CheckedChanged);
             // 
             // cbPur
             // 
@@ -508,22 +442,7 @@
             this.cbPur.TabIndex = 1;
             this.cbPur.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbPur.UseVisualStyleBackColor = false;
-            // 
-            // cbSup
-            // 
-            this.cbSup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbSup.AutoSize = true;
-            this.cbSup.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbSup.Location = new System.Drawing.Point(934, 243);
-            this.cbSup.Margin = new System.Windows.Forms.Padding(0);
-            this.cbSup.Name = "cbSup";
-            this.cbSup.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbSup.Size = new System.Drawing.Size(118, 29);
-            this.cbSup.TabIndex = 1;
-            this.cbSup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbSup.UseVisualStyleBackColor = true;
+            this.cbPur.CheckedChanged += new System.EventHandler(this.cbPur_CheckedChanged);
             // 
             // cbOrd
             // 
@@ -541,22 +460,7 @@
             this.cbOrd.TabIndex = 1;
             this.cbOrd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbOrd.UseVisualStyleBackColor = false;
-            // 
-            // cbOrdl
-            // 
-            this.cbOrdl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbOrdl.AutoSize = true;
-            this.cbOrdl.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbOrdl.Location = new System.Drawing.Point(934, 301);
-            this.cbOrdl.Margin = new System.Windows.Forms.Padding(0);
-            this.cbOrdl.Name = "cbOrdl";
-            this.cbOrdl.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbOrdl.Size = new System.Drawing.Size(118, 29);
-            this.cbOrdl.TabIndex = 1;
-            this.cbOrdl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbOrdl.UseVisualStyleBackColor = true;
+            this.cbOrd.CheckedChanged += new System.EventHandler(this.cbOrd_CheckedChanged);
             // 
             // cbSett
             // 
@@ -574,55 +478,7 @@
             this.cbSett.TabIndex = 1;
             this.cbSett.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cbSett.UseVisualStyleBackColor = false;
-            // 
-            // cbAcc
-            // 
-            this.cbAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbAcc.AutoSize = true;
-            this.cbAcc.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbAcc.Location = new System.Drawing.Point(934, 359);
-            this.cbAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.cbAcc.Name = "cbAcc";
-            this.cbAcc.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbAcc.Size = new System.Drawing.Size(118, 29);
-            this.cbAcc.TabIndex = 1;
-            this.cbAcc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbAcc.UseVisualStyleBackColor = true;
-            // 
-            // cbRole
-            // 
-            this.cbRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbRole.AutoSize = true;
-            this.cbRole.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbRole.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbRole.Location = new System.Drawing.Point(934, 388);
-            this.cbRole.Margin = new System.Windows.Forms.Padding(0);
-            this.cbRole.Name = "cbRole";
-            this.cbRole.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbRole.Size = new System.Drawing.Size(118, 29);
-            this.cbRole.TabIndex = 1;
-            this.cbRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbRole.UseVisualStyleBackColor = false;
-            // 
-            // cbPer
-            // 
-            this.cbPer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbPer.AutoSize = true;
-            this.cbPer.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cbPer.Location = new System.Drawing.Point(934, 417);
-            this.cbPer.Margin = new System.Windows.Forms.Padding(0);
-            this.cbPer.Name = "cbPer";
-            this.cbPer.Padding = new System.Windows.Forms.Padding(2, 2, 15, 2);
-            this.cbPer.Size = new System.Drawing.Size(118, 29);
-            this.cbPer.TabIndex = 1;
-            this.cbPer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cbPer.UseVisualStyleBackColor = true;
+            this.cbSett.CheckedChanged += new System.EventHandler(this.cbSett_CheckedChanged);
             // 
             // label20
             // 
@@ -639,6 +495,125 @@
             this.label20.TabIndex = 0;
             this.label20.Text = "Roles";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(934, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 40);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Action";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(934, 127);
+            this.label15.Margin = new System.Windows.Forms.Padding(0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(118, 29);
+            this.label15.TabIndex = 3;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Gainsboro;
+            this.label16.Location = new System.Drawing.Point(934, 156);
+            this.label16.Margin = new System.Windows.Forms.Padding(0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(118, 29);
+            this.label16.TabIndex = 3;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(934, 185);
+            this.label21.Margin = new System.Windows.Forms.Padding(0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(118, 29);
+            this.label21.TabIndex = 3;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(934, 243);
+            this.label22.Margin = new System.Windows.Forms.Padding(0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(118, 29);
+            this.label22.TabIndex = 3;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(934, 301);
+            this.label23.Margin = new System.Windows.Forms.Padding(0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(118, 29);
+            this.label23.TabIndex = 3;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(934, 359);
+            this.label24.Margin = new System.Windows.Forms.Padding(0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(118, 29);
+            this.label24.TabIndex = 3;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Gainsboro;
+            this.label25.Location = new System.Drawing.Point(934, 388);
+            this.label25.Margin = new System.Windows.Forms.Padding(0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(118, 29);
+            this.label25.TabIndex = 3;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(934, 417);
+            this.label26.Margin = new System.Windows.Forms.Padding(0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(118, 29);
+            this.label26.TabIndex = 3;
             // 
             // checkBox3
             // 
@@ -678,6 +653,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.cbActive);
             this.panel1.Controls.Add(this.cbUser);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -685,6 +661,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1072, 105);
             this.panel1.TabIndex = 13;
+            // 
+            // cbActive
+            // 
+            this.cbActive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbActive.AutoSize = true;
+            this.cbActive.Location = new System.Drawing.Point(994, 67);
+            this.cbActive.Name = "cbActive";
+            this.cbActive.Size = new System.Drawing.Size(56, 17);
+            this.cbActive.TabIndex = 3;
+            this.cbActive.Text = "Active";
+            this.cbActive.UseVisualStyleBackColor = true;
+            this.cbActive.CheckedChanged += new System.EventHandler(this.cbActive_CheckedChanged);
             // 
             // cbUser
             // 
@@ -694,6 +682,7 @@
             this.cbUser.Name = "cbUser";
             this.cbUser.Size = new System.Drawing.Size(402, 23);
             this.cbUser.TabIndex = 2;
+            this.cbUser.SelectedIndexChanged += new System.EventHandler(this.cbUser_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -737,7 +726,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox cbAllAllow;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -757,16 +745,18 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.CheckBox cbInv;
         private System.Windows.Forms.CheckBox cbPro;
-        private System.Windows.Forms.CheckBox cbBrand;
-        private System.Windows.Forms.CheckBox cbSize;
-        private System.Windows.Forms.CheckBox cbCat;
         private System.Windows.Forms.CheckBox cbPur;
-        private System.Windows.Forms.CheckBox cbSup;
         private System.Windows.Forms.CheckBox cbOrd;
-        private System.Windows.Forms.CheckBox cbOrdl;
         private System.Windows.Forms.CheckBox cbSett;
-        private System.Windows.Forms.CheckBox cbAcc;
-        private System.Windows.Forms.CheckBox cbRole;
-        private System.Windows.Forms.CheckBox cbPer;
+        private System.Windows.Forms.CheckBox cbActive;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }

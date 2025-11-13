@@ -77,7 +77,6 @@ namespace MartManagementSystem
             //dgvData.Columns["CreatedAt"].Visible = false;
             //dgvData.Columns["UpdatedAt"].Visible = false;
             //dgvData.Columns["ImageUrl"].Visible = false;
-            dgvData.Columns["Tax"].Visible = false;
             dgvData.Columns["CostPrice"].Visible = false;
             dgvData.Columns["IsDeleted"].Visible = false;
 

@@ -143,10 +143,11 @@ namespace MartManagementSystem
                 ImageUrl = SaveImageToAssets(txtImageUrl.Text)
             };
 
-            bool result = user.InsertUser(u);
+           int userId = user.InsertUser(u);
 
-            if (result)
+            if (userId > 0)
             {
+                Permission.InsertPermission(userId);
                 ClearField();
                 LoadData();
             }

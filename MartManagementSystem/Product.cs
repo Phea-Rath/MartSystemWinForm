@@ -15,10 +15,9 @@ namespace MartManagementSystem
         public int ProductId { get; set; }           // item_id
         public string ProductName { get; set; }      // item_name
         public string ProductCode { get; set; }      // item_code
-        public decimal UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; } = 0;
         public decimal CostPrice { get; set; } = 0;
-        public decimal Discount { get; set; }
-        public decimal Tax { get; set; } = 0;
+        public decimal Discount { get; set; } = 0;
         public string Description { get; set; }
         public string ImageUrl { get; set; }
 
@@ -45,7 +44,6 @@ namespace MartManagementSystem
             UnitPrice = unitPrice;
             CostPrice = costPrice;
             Discount = discount;
-            Tax = tax;
             Description = description;
             CreatedBy = createdBy;
         }
@@ -57,7 +55,7 @@ namespace MartManagementSystem
             string query = @"
             SELECT 
                 p.item_id, p.item_code, p.item_name, p.category_id, p.brand_id, p.size_id,
-                p.unit_price, p.cost_price, p.discount, p.tax, p.description, p.image, p.created_by, p.created_at, p.updated_at,
+                p.unit_price, p.cost_price, p.discount, p.description, p.image, p.created_by, p.created_at, p.updated_at,
                 c.category_name, b.brand_name, s.size_name
             FROM items p
             LEFT JOIN Categories c ON p.category_id = c.category_id
@@ -87,15 +85,14 @@ namespace MartManagementSystem
                             UnitPrice = reader.IsDBNull(6) ? 0 : reader.GetDecimal(6),
                             CostPrice = reader.IsDBNull(7) ? 0 : reader.GetDecimal(7),
                             Discount = reader.IsDBNull(8) ? 0 : reader.GetDecimal(8),
-                            Tax = reader.IsDBNull(9) ? 0 : reader.GetDecimal(9),
-                            Description = reader.IsDBNull(10) ? "" : reader.GetString(10),
-                            ImageUrl = reader.IsDBNull(11) ? "" : reader.GetString(11),
-                            CreatedBy = reader.IsDBNull(12) ? 0 : reader.GetInt32(12),
-                            CreatedAt = reader.IsDBNull(13) ? DateTime.Now : reader.GetDateTime(13),
-                            UpdatedAt = reader.IsDBNull(14) ? (DateTime?)null : reader.GetDateTime(14),
-                            CategoryName = reader.IsDBNull(15) ? "" : reader.GetString(15),
-                            BrandName = reader.IsDBNull(16) ? "" : reader.GetString(16),
-                            SizeName = reader.IsDBNull(17) ? "" : reader.GetString(17)
+                            Description = reader.IsDBNull(9) ? "" : reader.GetString(9),
+                            ImageUrl = reader.IsDBNull(10) ? "" : reader.GetString(10),
+                            CreatedBy = reader.IsDBNull(11) ? 0 : reader.GetInt32(11),
+                            CreatedAt = reader.IsDBNull(12) ? DateTime.Now : reader.GetDateTime(12),
+                            UpdatedAt = reader.IsDBNull(13) ? (DateTime?)null : reader.GetDateTime(13),
+                            CategoryName = reader.IsDBNull(14) ? "" : reader.GetString(14),
+                            BrandName = reader.IsDBNull(15) ? "" : reader.GetString(15),
+                            SizeName = reader.IsDBNull(16) ? "" : reader.GetString(16)
                         });
                     }
                 }
@@ -112,9 +109,9 @@ namespace MartManagementSystem
             SqlConnection conn = SqlServerConnection.GetConnection();
             string query = @"
             INSERT INTO items 
-            (item_code, item_name, category_id, brand_id, size_id, unit_price, cost_price, discount, tax, description, image, created_by)
+            (item_code, item_name, category_id, brand_id, size_id, unit_price, cost_price, discount, description, image, created_by)
             VALUES
-            (@code, @name, @category_id, @brand_id, @size_id, @unit_price, @cost_price, @discount, @tax, @description, @image , @created_by)
+            (@code, @name, @category_id, @brand_id, @size_id, @unit_price, @cost_price, @discount, @description, @image , @created_by)
         ";
 
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -126,7 +123,6 @@ namespace MartManagementSystem
             cmd.Parameters.AddWithValue("@unit_price", p.UnitPrice);
             cmd.Parameters.AddWithValue("@cost_price", p.CostPrice);
             cmd.Parameters.AddWithValue("@discount", p.Discount);
-            cmd.Parameters.AddWithValue("@tax", p.Tax);
             cmd.Parameters.AddWithValue("@description", p.Description ?? "");
             cmd.Parameters.AddWithValue("@image", p.ImageUrl);
             cmd.Parameters.AddWithValue("@created_by", p.CreatedBy);
@@ -159,7 +155,7 @@ namespace MartManagementSystem
             string query = @"
             UPDATE items SET 
                 item_code = @code, item_name = @name, category_id = @category_id, brand_id = @brand_id, size_id = @size_id,
-                unit_price = @unit_price, cost_price = @cost_price, discount = @discount, tax = @tax, description = @description,image = @image,
+                unit_price = @unit_price, cost_price = @cost_price, discount = @discount, description = @description,image = @image,
                 updated_at = @updated_at
             WHERE item_id = @id
         ";
@@ -175,7 +171,6 @@ namespace MartManagementSystem
             cmd.Parameters.AddWithValue("@cost_price", p.CostPrice);
             cmd.Parameters.AddWithValue("@discount", p.Discount);
             cmd.Parameters.AddWithValue("@image", p.ImageUrl);
-            cmd.Parameters.AddWithValue("@tax", p.Tax);
             cmd.Parameters.AddWithValue("@description", p.Description ?? "");
             cmd.Parameters.AddWithValue("@updated_at", DateTime.Now);
 

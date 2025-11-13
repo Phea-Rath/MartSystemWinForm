@@ -1,12 +1,16 @@
-﻿using System;
+﻿using MartManagementSystem.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using Image = System.Drawing.Image;
 
 namespace MartManagementSystem
 {
@@ -26,9 +30,15 @@ namespace MartManagementSystem
         DashboardForm dashboardForm = new DashboardForm();
         OrderList orderListForm = new OrderList();
         public List<Form> formList = new List<Form>();
-        public LayoutForm()
+        Form1 _loginForm;
+        private string _username;
+        private int _user_id;
+        public LayoutForm(Form1 loginForm, string username,int user_id)
         {
             InitializeComponent();
+            _loginForm = loginForm;
+            _username = username;
+            _user_id = user_id;
             formList.AddRange(new Form[] { categoryForm, sizeForm, brandForm, productForm, purchaseForm, supplierForm, inventoryForm, roleForm, userForm, permissionForm, orderForm, dashboardForm, orderListForm });
 
             foreach (Form form in formList)
@@ -48,12 +58,83 @@ namespace MartManagementSystem
             btnOrder.Click += btnOrder_CLick;
             dashboardForm.Show();
 
+            _loginForm.handleLogin += LoadLayout;
             orderForm.handleOrderList += (s, e) =>
             {
                 activeForm(orderListForm);
             };
+            orderListForm.handleOrder += (s, e) =>
+            {
+                activeForm(orderListForm);
+            };
 
+            LoadPermission();
         }
+
+        private void LoadLayout(object sender,EventArgs e)
+        {
+            Services.ShowAlert($"{_username} Logined!");
+            LoadPermission();
+        }
+
+        public void LoadPermission()
+        {
+
+            // Always refresh permissions from DB
+            Permission.GetPermissionUser(_user_id);
+
+            string folder = Path.Combine(System.Windows.Forms.Application.StartupPath, "assets");
+            string img = Convert.ToString(User.UserLogin[0].ImageUrl);
+            string imgPath = Path.Combine(folder, img);
+
+            if (File.Exists(imgPath))
+            {
+                pbProfile.Image = Image.FromFile(imgPath);
+                pbProfile.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+            lblAcc.Text = User.UserLogin[0].UserName;
+
+            Dictionary<int, Button> map = new Dictionary<int, Button>()
+            {
+                {1, btnDashboard},
+                {2, btnProduct},
+                {3, btnSize},
+                {4, btnCategory},
+                {5, btnBrand},
+                {6, btnInven},
+                {13, btnPurchase},
+                {8, btnOrder},
+                {9, btnSetting},
+                {12, btnRole},
+                {11, btnPermission},
+                {7, btnSupplier},
+                {10, btnAccount},
+            };
+
+            // Hide all first (ensures reset)
+            foreach (var btn in map.Values)
+                btn.Visible = false;
+
+            // Apply new visibility
+            foreach (var p in Permission.permissions)
+            {
+                if (map.ContainsKey(p.MenuId))
+                {
+                    map[p.MenuId].Visible = p.IsActive;
+                    //MessageBox.Show($"{p.IsActive}");
+                    if (p.MenuId == 2)
+                    {
+                        btnBrand.Visible = false;
+                    }
+                }
+            }
+
+            //// Refresh the UI
+            //this.Refresh();
+            //System.Windows.Forms.Application.DoEvents();
+        }
+
 
 
 
@@ -148,6 +229,10 @@ namespace MartManagementSystem
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            bool off = true;
+            DropDown(timerPurchase,ref off, pPurchase);
+            DropDown(timerProduct, ref off, pProduct);
+            DropDown(timerSetting, ref off, pSetting);
             this.Hide();
             Form1 login_form = new Form1();
             login_form.ShowDialog();

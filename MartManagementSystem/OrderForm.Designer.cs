@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.flpListOrd = new System.Windows.Forms.FlowLayoutPanel();
+            this.tlpOrder = new System.Windows.Forms.TableLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
@@ -91,16 +91,19 @@
             this.label78 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
+            this.lblSup = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
+            this.lblDisPrice = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbPayMeth = new System.Windows.Forms.ComboBox();
+            this.btnPay = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnOrderList = new System.Windows.Forms.Button();
+            this.flpCards = new System.Windows.Forms.FlowLayoutPanel();
+            this.pCard = new System.Windows.Forms.Panel();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -166,7 +169,7 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpCat = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -176,10 +179,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnOrderList = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
+            this.flpListOrd.SuspendLayout();
+            this.tlpOrder.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -200,8 +202,8 @@
             this.panel11.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.flpCards.SuspendLayout();
+            this.pCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -217,14 +219,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flpCat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.flowLayoutPanel3);
+            this.panel1.Controls.Add(this.flpListOrd);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.tableLayoutPanel5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -233,36 +235,36 @@
             this.panel1.Size = new System.Drawing.Size(302, 644);
             this.panel1.TabIndex = 0;
             // 
-            // flowLayoutPanel3
+            // flpListOrd
             // 
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.Controls.Add(this.tableLayoutPanel7);
-            this.flowLayoutPanel3.Controls.Add(this.tableLayoutPanel3);
-            this.flowLayoutPanel3.Controls.Add(this.tableLayoutPanel4);
-            this.flowLayoutPanel3.Controls.Add(this.tableLayoutPanel1);
-            this.flowLayoutPanel3.Controls.Add(this.tableLayoutPanel2);
-            this.flowLayoutPanel3.Controls.Add(this.tableLayoutPanel6);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 36);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(302, 463);
-            this.flowLayoutPanel3.TabIndex = 1;
+            this.flpListOrd.AutoScroll = true;
+            this.flpListOrd.Controls.Add(this.tlpOrder);
+            this.flpListOrd.Controls.Add(this.tableLayoutPanel3);
+            this.flpListOrd.Controls.Add(this.tableLayoutPanel4);
+            this.flpListOrd.Controls.Add(this.tableLayoutPanel1);
+            this.flpListOrd.Controls.Add(this.tableLayoutPanel2);
+            this.flpListOrd.Controls.Add(this.tableLayoutPanel6);
+            this.flpListOrd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpListOrd.Location = new System.Drawing.Point(0, 36);
+            this.flpListOrd.Name = "flpListOrd";
+            this.flpListOrd.Padding = new System.Windows.Forms.Padding(5);
+            this.flpListOrd.Size = new System.Drawing.Size(302, 429);
+            this.flpListOrd.TabIndex = 1;
             // 
-            // tableLayoutPanel7
+            // tlpOrder
             // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.76224F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.23776F));
-            this.tableLayoutPanel7.Controls.Add(this.panel17, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button23, 1, 0);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(286, 47);
-            this.tableLayoutPanel7.TabIndex = 0;
+            this.tlpOrder.BackColor = System.Drawing.SystemColors.Control;
+            this.tlpOrder.ColumnCount = 2;
+            this.tlpOrder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.76224F));
+            this.tlpOrder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.23776F));
+            this.tlpOrder.Controls.Add(this.panel17, 0, 0);
+            this.tlpOrder.Controls.Add(this.button23, 1, 0);
+            this.tlpOrder.Location = new System.Drawing.Point(8, 8);
+            this.tlpOrder.Name = "tlpOrder";
+            this.tlpOrder.RowCount = 1;
+            this.tlpOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpOrder.Size = new System.Drawing.Size(286, 47);
+            this.tlpOrder.TabIndex = 0;
             // 
             // panel17
             // 
@@ -936,24 +938,27 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.57616F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.42384F));
             this.tableLayoutPanel5.Controls.Add(this.label72, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label73, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lblSup, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.label74, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.label75, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lblDisPrice, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.label76, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.label77, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.button20, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.button21, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lblTotalPrice, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.label4, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.cbPayMeth, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.btnPay, 0, 4);
+            this.tableLayoutPanel5.Controls.Add(this.btnClear, 1, 4);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 499);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 465);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel5.RowCount = 5;
+            this.tableLayoutPanel5.RowCount = 6;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(302, 145);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(302, 179);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // label72
@@ -965,15 +970,15 @@
             this.label72.TabIndex = 0;
             this.label72.Text = "SubTotal:";
             // 
-            // label73
+            // lblSup
             // 
-            this.label73.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(248, 5);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(46, 13);
-            this.label73.TabIndex = 0;
-            this.label73.Text = "$980,99";
+            this.lblSup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSup.AutoSize = true;
+            this.lblSup.Location = new System.Drawing.Point(248, 5);
+            this.lblSup.Name = "lblSup";
+            this.lblSup.Size = new System.Drawing.Size(46, 13);
+            this.lblSup.TabIndex = 0;
+            this.lblSup.Text = "$980,99";
             // 
             // label74
             // 
@@ -984,15 +989,15 @@
             this.label74.TabIndex = 1;
             this.label74.Text = "Discount ($):";
             // 
-            // label75
+            // lblDisPrice
             // 
-            this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(248, 35);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(46, 13);
-            this.label75.TabIndex = 1;
-            this.label75.Text = "$280.00";
+            this.lblDisPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDisPrice.AutoSize = true;
+            this.lblDisPrice.Location = new System.Drawing.Point(248, 35);
+            this.lblDisPrice.Name = "lblDisPrice";
+            this.lblDisPrice.Size = new System.Drawing.Size(46, 13);
+            this.lblDisPrice.TabIndex = 1;
+            this.lblDisPrice.Text = "$280.00";
             // 
             // label76
             // 
@@ -1003,48 +1008,70 @@
             this.label76.TabIndex = 2;
             this.label76.Text = "Total";
             // 
-            // label77
+            // lblTotalPrice
             // 
-            this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(248, 65);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(46, 13);
-            this.label77.TabIndex = 2;
-            this.label77.Text = "$700,99";
+            this.lblTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(248, 65);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(46, 13);
+            this.lblTotalPrice.TabIndex = 2;
+            this.lblTotalPrice.Text = "$700,99";
             // 
-            // button20
+            // label4
             // 
-            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Payment Methods";
+            // 
+            // cbPayMeth
+            // 
+            this.cbPayMeth.FormattingEnabled = true;
+            this.cbPayMeth.Items.AddRange(new object[] {
+            "Cash",
+            "Bank"});
+            this.cbPayMeth.Location = new System.Drawing.Point(193, 98);
+            this.cbPayMeth.Name = "cbPayMeth";
+            this.cbPayMeth.Size = new System.Drawing.Size(101, 21);
+            this.cbPayMeth.TabIndex = 5;
+            // 
+            // btnPay
+            // 
+            this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button20.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Location = new System.Drawing.Point(8, 98);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(179, 34);
-            this.button20.TabIndex = 3;
-            this.button20.Text = "Pay ($700,99)";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnPay.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPay.ForeColor = System.Drawing.Color.White;
+            this.btnPay.Location = new System.Drawing.Point(8, 138);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(179, 34);
+            this.btnPay.TabIndex = 3;
+            this.btnPay.Text = "Pay ($700,99)";
+            this.btnPay.UseVisualStyleBackColor = false;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
-            // button21
+            // btnClear
             // 
-            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button21.BackColor = System.Drawing.Color.Red;
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Location = new System.Drawing.Point(219, 98);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 34);
-            this.button21.TabIndex = 3;
-            this.button21.Text = "Clear All";
-            this.button21.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.Red;
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(219, 138);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 34);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear All";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnOrderList);
-            this.panel2.Controls.Add(this.flowLayoutPanel2);
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
+            this.panel2.Controls.Add(this.flpCards);
+            this.panel2.Controls.Add(this.flpCat);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1053,41 +1080,52 @@
             this.panel2.Size = new System.Drawing.Size(820, 644);
             this.panel2.TabIndex = 1;
             // 
-            // flowLayoutPanel2
+            // btnOrderList
             // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnOrderList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOrderList.Location = new System.Drawing.Point(729, 32);
+            this.btnOrderList.Name = "btnOrderList";
+            this.btnOrderList.Size = new System.Drawing.Size(75, 23);
+            this.btnOrderList.TabIndex = 6;
+            this.btnOrderList.Text = "Order List";
+            this.btnOrderList.UseVisualStyleBackColor = true;
+            this.btnOrderList.Click += new System.EventHandler(this.btnOrderList_Click);
+            // 
+            // flpCards
+            // 
+            this.flpCards.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.Controls.Add(this.panel3);
-            this.flowLayoutPanel2.Controls.Add(this.panel4);
-            this.flowLayoutPanel2.Controls.Add(this.panel6);
-            this.flowLayoutPanel2.Controls.Add(this.panel5);
-            this.flowLayoutPanel2.Controls.Add(this.panel7);
-            this.flowLayoutPanel2.Controls.Add(this.panel8);
-            this.flowLayoutPanel2.Controls.Add(this.panel10);
-            this.flowLayoutPanel2.Controls.Add(this.panel9);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(16, 78);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(788, 566);
-            this.flowLayoutPanel2.TabIndex = 5;
+            this.flpCards.Controls.Add(this.pCard);
+            this.flpCards.Controls.Add(this.panel4);
+            this.flpCards.Controls.Add(this.panel6);
+            this.flpCards.Controls.Add(this.panel5);
+            this.flpCards.Controls.Add(this.panel7);
+            this.flpCards.Controls.Add(this.panel8);
+            this.flpCards.Controls.Add(this.panel10);
+            this.flpCards.Controls.Add(this.panel9);
+            this.flpCards.Location = new System.Drawing.Point(16, 78);
+            this.flpCards.Name = "flpCards";
+            this.flpCards.Size = new System.Drawing.Size(788, 566);
+            this.flpCards.TabIndex = 5;
             // 
-            // panel3
+            // pCard
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label54);
-            this.panel3.Controls.Add(this.label53);
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(3);
-            this.panel3.Size = new System.Drawing.Size(179, 221);
-            this.panel3.TabIndex = 0;
+            this.pCard.BackColor = System.Drawing.Color.White;
+            this.pCard.Controls.Add(this.label54);
+            this.pCard.Controls.Add(this.label53);
+            this.pCard.Controls.Add(this.button8);
+            this.pCard.Controls.Add(this.label5);
+            this.pCard.Controls.Add(this.label6);
+            this.pCard.Controls.Add(this.label3);
+            this.pCard.Controls.Add(this.label2);
+            this.pCard.Controls.Add(this.label1);
+            this.pCard.Controls.Add(this.pictureBox2);
+            this.pCard.Location = new System.Drawing.Point(3, 3);
+            this.pCard.Name = "pCard";
+            this.pCard.Padding = new System.Windows.Forms.Padding(3);
+            this.pCard.Size = new System.Drawing.Size(179, 221);
+            this.pCard.TabIndex = 0;
             // 
             // label54
             // 
@@ -1412,6 +1450,7 @@
             this.label15.Size = new System.Drawing.Size(48, 13);
             this.label15.TabIndex = 2;
             this.label15.Text = "category";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label16
             // 
@@ -1815,22 +1854,22 @@
             this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // flpCat
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.flpCat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.button6);
-            this.flowLayoutPanel1.Controls.Add(this.button7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 28);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(701, 29);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.flpCat.AutoScroll = true;
+            this.flpCat.Controls.Add(this.button1);
+            this.flpCat.Controls.Add(this.button2);
+            this.flpCat.Controls.Add(this.button3);
+            this.flpCat.Controls.Add(this.button4);
+            this.flpCat.Controls.Add(this.button5);
+            this.flpCat.Controls.Add(this.button6);
+            this.flpCat.Controls.Add(this.button7);
+            this.flpCat.Location = new System.Drawing.Point(21, 28);
+            this.flpCat.Name = "flpCat";
+            this.flpCat.Size = new System.Drawing.Size(701, 29);
+            this.flpCat.TabIndex = 4;
             // 
             // button1
             // 
@@ -1913,17 +1952,6 @@
             this.textBox1.Size = new System.Drawing.Size(327, 21);
             this.textBox1.TabIndex = 2;
             // 
-            // btnOrderList
-            // 
-            this.btnOrderList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOrderList.Location = new System.Drawing.Point(729, 32);
-            this.btnOrderList.Name = "btnOrderList";
-            this.btnOrderList.Size = new System.Drawing.Size(75, 23);
-            this.btnOrderList.TabIndex = 6;
-            this.btnOrderList.Text = "Order List";
-            this.btnOrderList.UseVisualStyleBackColor = true;
-            this.btnOrderList.Click += new System.EventHandler(this.btnOrderList_Click);
-            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1936,8 +1964,8 @@
             this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "OrderForm";
             this.panel1.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
+            this.flpListOrd.ResumeLayout(false);
+            this.tlpOrder.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
@@ -1967,9 +1995,9 @@
             this.tableLayoutPanel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.flpCards.ResumeLayout(false);
+            this.pCard.ResumeLayout(false);
+            this.pCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -1992,7 +2020,7 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flpCat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -2004,8 +2032,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpCards;
+        private System.Windows.Forms.FlowLayoutPanel flpCat;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -2013,7 +2041,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pCard;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
@@ -2078,7 +2106,7 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flpListOrd;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel15;
@@ -2093,15 +2121,15 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label lblSup;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label lblDisPrice;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Label lblTotalPrice;
+        private System.Windows.Forms.Button btnPay;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TableLayoutPanel tlpOrder;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label89;
@@ -2148,5 +2176,7 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button btnOrderList;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbPayMeth;
     }
 }

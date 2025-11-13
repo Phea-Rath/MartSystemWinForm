@@ -31,10 +31,28 @@ namespace MartManagementSystem
             rtDes.Clear();
         }
 
+        private void dgvData_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            if (dgvData.Columns.Contains("No"))
+            {
+                dgvData.Rows[e.RowIndex].Cells["No"].Value = (e.RowIndex + 1).ToString();
+            }
+        }
+
         private void LoadData()
         {
             Inventory.GetAllInventories();
             dgvData.DataSource = null;
+            if (!dgvData.Columns.Contains("No"))
+            {
+                DataGridViewTextBoxColumn col = new DataGridViewTextBoxColumn
+                {
+                    Name = "No",
+                    HeaderText = "#",
+                    Width = 50
+                };
+                dgvData.Columns.Insert(0, col);
+            }
             dgvData.DataSource = Inventory.inventories;
             dgvData.Columns["IsDeleted"].Visible = false;
             dgvData.Columns["CreatedBy"].Visible = false;
@@ -45,8 +63,29 @@ namespace MartManagementSystem
         {
             dgvItem.DataSource = null;
             dgvItem.DataSource = InventoryDetail.InventoryDetailList;
+
+            dgvItem.Columns["ProductId"].DisplayIndex = 0;
+            dgvItem.Columns["ProductName"].DisplayIndex = 1;
+            dgvItem.Columns["ExpireDate"].DisplayIndex = 2;
+
             dgvItem.Columns["ProductId"].Visible = false;
             dgvItem.Columns["InventoryId"].Visible = false;
+            dgvItem.Columns["CategoryId"].Visible = false;
+            dgvItem.Columns["BrandId"].Visible = false;
+            dgvItem.Columns["SizeId"].Visible = false;
+            dgvItem.Columns["CategoryName"].Visible = false;
+            dgvItem.Columns["BrandName"].Visible = false;
+            dgvItem.Columns["SizeName"].Visible = false;
+            dgvItem.Columns["CreatedBy"].Visible = false;
+            dgvItem.Columns["CreatedAt"].Visible = false;
+            dgvItem.Columns["UpdatedAt"].Visible = false;
+            dgvItem.Columns["UnitPrice"].Visible = false;
+            dgvItem.Columns["Discount"].Visible = false;
+            dgvItem.Columns["ImageUrl"].Visible = false;
+            dgvItem.Columns["ProductCode"].Visible = false;
+            dgvItem.Columns["Description"].Visible = false;
+            dgvItem.Columns["CostPrice"].Visible = false;
+            dgvItem.Columns["IsDeleted"].Visible = false;
         }
         
 

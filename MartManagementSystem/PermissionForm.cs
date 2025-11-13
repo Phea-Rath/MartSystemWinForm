@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,18 +15,9 @@ namespace MartManagementSystem
     {
         User _user = new User();
         Menu _menu = new Menu();
-
-        // Collect all permission checkboxes
-        private List<CheckBox> cbList = new List<CheckBox>();
-
-        // Parent → Children relation map
-        private Dictionary<CheckBox, List<CheckBox>> permissionMap;
-
         public PermissionForm()
         {
             InitializeComponent();
-            BuildCheckBoxList();
-            BuildPermissionRelations();
             LoadData();
             LoadComboBoxes();
         }
@@ -44,81 +36,131 @@ namespace MartManagementSystem
             _menu.GetAllMenus();
         }
 
-        // ✅ Collect all permission CheckBoxes
-        private void BuildCheckBoxList()
+        private int GetSelectedUserId()
         {
-            cbList.AddRange(new[]
+            if (cbUser.SelectedValue == null || cbUser.SelectedIndex == -1 || $"{cbUser.SelectedValue}" == "MartManagementSystem.User")
             {
-            cbAcc, cbBrand, cbCat, cbDas, cbInv, cbOrd, cbOrdl, cbPro, cbPur,
-            cbSize, cbSup, cbRole, cbSett, cbPer
-        });
-
-            foreach (var cb in cbList)
-            {
-                cb.CheckedChanged += PermissionCheckBox_CheckedChanged;
+                //MessageBox.Show("Please select a user first!", "Information");
+                return 0;
             }
+            return Convert.ToInt32(cbUser.SelectedValue);
         }
 
-        // ✅ Define Parent → Child checkbox logic (Clean and Maintainable)
-        private void BuildPermissionRelations()
+
+        // ================= PERMISSION CHECKBOX EVENTS =================
+
+        private void cbPro_CheckedChanged(object sender, EventArgs e)
         {
-            permissionMap = new Dictionary<CheckBox, List<CheckBox>>()
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+
+            int[] arrMenuId = { 2, 3, 4, 5 };
+            bool res = Permission.ChangePermission(userId, arrMenuId, cbPro.Checked);
+            if (res) Services.ShowAlert("Product permission updated!");
+        }
+
+        private void cbPur_CheckedChanged(object sender, EventArgs e)
         {
-            { cbPro, new List<CheckBox> { cbBrand, cbSize, cbCat } },
-            { cbOrd, new List<CheckBox> { cbOrdl } },
-            { cbPur, new List<CheckBox> { cbSup } },
-            { cbSett, new List<CheckBox> { cbAcc, cbRole, cbPer } }
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+
+            int[] arrMenuId = { 7 };
+            bool res = Permission.ChangePermission(userId, arrMenuId, cbPur.Checked);
+            if (res) Services.ShowAlert("Purchase permission updated!");
+        }
+
+        private void cbOrd_CheckedChanged(object sender, EventArgs e)
+        {
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+
+            int[] arrMenuId = { 8 };
+            bool res = Permission.ChangePermission(userId, arrMenuId, cbOrd.Checked);
+            if (res) Services.ShowAlert("Order permission updated!");
+        }
+
+        private void cbSett_CheckedChanged(object sender, EventArgs e)
+        {
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+
+            int[] arrMenuId = { 9, 10, 11, 12 };
+            bool res = Permission.ChangePermission(userId, arrMenuId, cbSett.Checked);
+            if (res) Services.ShowAlert("Settings permission updated!");
+        }
+
+        private void cbDas_CheckedChanged(object sender, EventArgs e)
+        {
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+
+            int[] arrMenuId = { 1 };
+            bool res = Permission.ChangePermission(userId, arrMenuId, cbDas.Checked);
+            if (res) Services.ShowAlert("Dashboard permission updated!");
+        }
+
+        private void cbInv_CheckedChanged(object sender, EventArgs e)
+        {
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+
+            int[] arrMenuId = { 6 };
+            bool res = Permission.ChangePermission(userId, arrMenuId, cbInv.Checked);
+            if (res) Services.ShowAlert("Inventory permission updated!");
+        }
+
+
+        // ================= LOAD PERMISSION FOR SELECTED USER =================
+
+        private void LoadPermission()
+        {
+            cbActive.Checked = _user.IsActive;
+            // Map menu IDs to checkboxes
+            Dictionary<int, CheckBox> map = new Dictionary<int, CheckBox>()
+        {
+            {1, cbDas},
+            {2, cbPro},
+            {6, cbInv},
+            {7, cbPur},
+            {8, cbOrd},
+            {9, cbSett},
         };
-        }
 
-        // ✅ "Select All" functionality
-        private void cbAllAllow_CheckedChanged(object sender, EventArgs e)
-        {
-            foreach (var cb in cbList)
-                cb.CheckedChanged -= PermissionCheckBox_CheckedChanged;
-
-            foreach (var cb in cbList)
-                cb.Checked = cbAllAllow.Checked;
-
-            foreach (var cb in cbList)
-                cb.CheckedChanged += PermissionCheckBox_CheckedChanged;
-        }
-
-        // ✅ Handle Parent-Child Permission Logic
-        private void PermissionCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            // Stop events temporarily to avoid loop
-            foreach (var cb in cbList)
-                cb.CheckedChanged -= PermissionCheckBox_CheckedChanged;
-
-            CheckBox changed = sender as CheckBox;
-
-            // If changed checkbox is a parent → apply state to children
-            if (permissionMap.ContainsKey(changed))
+            foreach (var p in Permission.permissions)
             {
-                foreach (var child in permissionMap[changed])
-                    child.Checked = changed.Checked;
-            }
-            else
-            {
-                // If changed checkbox is a child → update parent state
-                foreach (var parent in permissionMap.Keys)
+                if (map.ContainsKey(p.MenuId))
                 {
-                    var children = permissionMap[parent];
-                    parent.Checked = children.All(c => c.Checked);
+                    map[p.MenuId].Checked = p.IsActive;
+                    map[p.MenuId].Text = p.MenuName;
                 }
             }
+        }
 
-            // Auto update Select All checkbox
-            cbAllAllow.CheckedChanged -= cbAllAllow_CheckedChanged;
-            cbAllAllow.Checked = cbList.All(c => c.Checked);
-            cbAllAllow.CheckedChanged += cbAllAllow_CheckedChanged;
+        private void cbUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbUser.SelectedIndex == -1) return;
 
-            // Re-enable event handlers
-            foreach (var cb in cbList)
-                cb.CheckedChanged += PermissionCheckBox_CheckedChanged;
+            int userId = GetSelectedUserId();
+            if (userId == 0) return;
+            
+            _user = User.GetUserById(userId);
+            Permission.GetPermissionUser(userId);
+            LoadPermission();
+        }
+
+        private void cbActive_CheckedChanged(object sender, EventArgs e)
+        {
+            //cbActive.Checked = !cbActive.Checked;
+            int userId = GetSelectedUserId();
+            bool res = User.DisableUser(userId, cbActive.Checked);
+            if (res)
+            {
+                Permission.GetPermissionUser(userId);
+                //LoadPermission();
+            }
         }
     }
+
 
 
 }

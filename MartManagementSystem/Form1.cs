@@ -15,6 +15,7 @@ namespace MartManagementSystem
 {
     public partial class Form1 : Form
     {
+        public event EventHandler handleLogin;
         User _user = new User();
         public Form1()
         {
@@ -38,61 +39,80 @@ namespace MartManagementSystem
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
-{
-    string _email = txtEmail.Text.Trim();
-    string _password = txtPassword.Text.Trim();
+        {
+            string _email = txtEmail.Text.Trim();
+            string _password = txtPassword.Text.Trim();
+            User.UserLogin.Clear(); 
 
-    if (string.IsNullOrEmpty(_email) || string.IsNullOrEmpty(_password))
-    {
-        MessageBox.Show("Please enter Email and Password!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        return;
-    }
-
-            SqlConnection conn = SqlServerConnection.GetConnection();
-    
-        string query = "SELECT * FROM users WHERE email = @email AND password = @password";
-            SqlCommand cmd = new SqlCommand(query, conn);
-        
-            cmd.Parameters.AddWithValue("@email", _email);
-            cmd.Parameters.AddWithValue("@password", _password);
-
-            try
+            if (string.IsNullOrEmpty(_email) || string.IsNullOrEmpty(_password))
             {
-                SqlDataReader r = cmd.ExecuteReader();
+                MessageBox.Show("Please enter Email and Password!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-                if (r.HasRows) // ✅ Check if account exists
-                {
-                    while (r.Read())
+                    SqlConnection conn = SqlServerConnection.GetConnection();
+    
+                string query = "SELECT * FROM users WHERE email = @email AND password = @password AND is_deleted = 0";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+        
+                    cmd.Parameters.AddWithValue("@email", _email);
+                    cmd.Parameters.AddWithValue("@password", _password);
+
+                    try
                     {
-                        User.UserLogin.Add(new User()
-                        {
-                            UserId = r["user_id"] == DBNull.Value ? 0 : Convert.ToInt32(r["user_id"]),
-                            UserName = r["user_name"] == DBNull.Value ? null : r["user_name"].ToString(),
-                            Email = r["email"] == DBNull.Value ? null : r["email"].ToString(),
-                            PhoneNumber = r["phone_number"] == DBNull.Value ? null : r["phone_number"].ToString(),
-                            Password = r["password"] == DBNull.Value ? null : r["password"].ToString(),
-                            CreatedBy = r["created_by"] == DBNull.Value ? (int?)null : Convert.ToInt32(r["created_by"]),
-                            LoginAt = r["login_at"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(r["login_at"]),
-                            CreatedAt = r["created_at"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(r["created_at"])
-                        });
-                    }
+                        SqlDataReader r = cmd.ExecuteReader();
 
-                    this.Hide();
-                    LayoutForm layout_form = new LayoutForm();
-                    layout_form.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Email or Password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                        if (r.Read()) // ✅ Check if account exists
+                        {
+                    
+                                User.UserLogin.Add(new User()
+                                {
+                                    UserId = r["user_id"] == DBNull.Value ? 0 : Convert.ToInt32(r["user_id"]),
+                                    UserName = r["user_name"] == DBNull.Value ? null : r["user_name"].ToString(),
+                                    Email = r["email"] == DBNull.Value ? null : r["email"].ToString(),
+                                    PhoneNumber = r["phone_number"] == DBNull.Value ? null : r["phone_number"].ToString(),
+                                    Password = r["password"] == DBNull.Value ? null : r["password"].ToString(),
+                                    ImageUrl = r["image"] == DBNull.Value ? null : r["image"].ToString(),
+                                    CreatedBy = r["created_by"] == DBNull.Value ? (int?)null : Convert.ToInt32(r["created_by"]),
+                                    IsActive = (bool)(r["is_active"] == DBNull.Value ? (bool?)null : Convert.ToBoolean(r["is_active"])),
+                                    LoginAt = r["login_at"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(r["login_at"]),
+                                    CreatedAt = r["created_at"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(r["created_at"])
+                                });
+                    
+                            if (!Convert.ToBoolean(r["is_active"]))
+                            {
+                                MessageBox.Show("Account is disabled!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                            handleLogin?.Invoke(this, EventArgs.Empty);
+
+
+                            this.Hide();
+                            LayoutForm layout_form = new LayoutForm(this, r["user_name"].ToString(), Convert.ToInt32(r["user_id"]));
+                            layout_form.FormClosed += LoyoutFormClosed;
+                            layout_form.Show();
+                            handleLogin?.Invoke(this, EventArgs.Empty); // event triggers correctly
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Email or Password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Error Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
         
     
-}
+        }
 
+        private void LoyoutFormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+            txtEmail.Clear();
+            txtPassword.Clear();
+        }
     }
 }
