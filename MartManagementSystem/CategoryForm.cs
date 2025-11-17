@@ -13,7 +13,7 @@ namespace MartManagementSystem
     public partial class CategoryForm : Form
     {
         Category category = new Category();
-
+        public event EventHandler CategoryChanged;
         public CategoryForm()
         {
             InitializeComponent();
@@ -58,6 +58,7 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
 
             dgvData.Refresh(); // Force repaint to update index column
+            CategoryChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void btnNew_Click(object sender, EventArgs e)

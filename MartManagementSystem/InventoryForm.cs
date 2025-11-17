@@ -13,14 +13,18 @@ namespace MartManagementSystem
     
     public partial class InventoryForm : Form
     {
-        public InventoryForm()
+        PurchaseForm _pur;
+        public event EventHandler InventoriesChanged;
+        public InventoryForm(PurchaseForm pur)
         {
             InitializeComponent();
+            _pur = pur;
             LoadData();
             cbProduct.DataSource = Product.ProductList;
             cbProduct.DisplayMember = "ProductName";
             cbProduct.ValueMember = "ProductId";
             cbProduct.SelectedIndex = -1;
+            _pur.PurchaseChanged += (s, e) => LoadData();
         }
 
         private void setForm()
@@ -29,6 +33,7 @@ namespace MartManagementSystem
             txtId.Clear();
             txtQuan.Clear();
             rtDes.Clear();
+            dgvItem.DataSource = null;
         }
 
         private void dgvData_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -57,6 +62,9 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
             dgvData.Columns["CreatedBy"].Visible = false;
             dgvData.Columns["InventoryId"].Visible = false;
+
+            dgvData.Refresh();
+            InventoriesChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void LoadItemList()
@@ -169,6 +177,32 @@ namespace MartManagementSystem
                 bool res = Inventory.DeleteInventory(id);
                 if (res) { LoadData(); setForm(); }
             }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string find = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(find))
+            {
+                // Show all
+                dgvData.DataSource = Product.ProductList;
+            }
+            else
+            {
+                // Filter list (case-insensitive, partial match)
+                var newList = Inventory.inventories
+                    .Where(p => !string.IsNullOrEmpty(p.Description) &&
+                                p.Description.IndexOf(find, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+
+                dgvData.DataSource = newList;
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            setForm();
         }
     }
 }

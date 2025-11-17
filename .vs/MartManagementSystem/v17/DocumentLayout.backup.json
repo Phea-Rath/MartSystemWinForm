@@ -3,52 +3,159 @@
   "WorkspaceRootPath": "D:\\Computer Language\\Projects\\MartSystemWinForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\layoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\layoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderlist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderlist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Stock_details.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\jej2gjph..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\ijrydsh3..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|d:\\computer language\\projects\\martsystemwinform\\martmanagementsystem\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|d:\\computer language\\projects\\martsystemwinform\\martmanagementsystem\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|d:\\computer language\\projects\\martsystemwinform\\martmanagementsystem\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|d:\\computer language\\projects\\martsystemwinform\\martmanagementsystem\\invoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\invoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\layoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\layoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Order_details.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Orders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\sizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\sizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\layoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\layoutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\permissionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\permissionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\sizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\sizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\supplierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\supplierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\inventorydetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,14 +178,6 @@
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,40 +192,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Menus.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\purchaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\permissionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\permissionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\brandform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Computer Language\\Projects\\MartSystemWinForm\\Database.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
@@ -145,36 +216,12 @@
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\roleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\supplierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\supplierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\productinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\productselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -187,14 +234,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\supplierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\supplierform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\sizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\sizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|D:\\Computer Language\\Projects\\MartSystemWinForm\\martmanagementsystem\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{349D1CE1-78ED-4582-871E-D79C04EE3FAC}|MartManagementSystem\\MartManagementSystem.csproj|solutionrelative:martmanagementsystem\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -211,6 +250,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Inventory_Detal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MartManagementSystem\\Inventory_Detal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\ijrydsh3..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\ijrydsh3..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\jej2gjph..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\jej2gjph..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -220,11 +271,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 31,
               "Title": "LayoutForm.cs [Design]",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\LayoutForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\LayoutForm.cs",
@@ -236,12 +287,77 @@
               "EditorCaption": " [Design]"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LayoutForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\LayoutForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\LayoutForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\LayoutForm.cs",
+              "RelativeToolTip": "MartManagementSystem\\LayoutForm.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAjwCoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:08:05.558Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\DashboardForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\DashboardForm.cs",
+              "RelativeToolTip": "MartManagementSystem\\DashboardForm.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAcwEgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T09:42:41.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "OrderList.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\OrderList.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs*",
+              "RelativeToolTip": "MartManagementSystem\\OrderList.cs*",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T14:31:01.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Order.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\Order.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Order.cs",
+              "RelativeToolTip": "MartManagementSystem\\Order.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:39:28.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Invoice.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Invoice.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\Invoice.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Invoice.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\Invoice.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T12:18:40.289Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Permission.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Permission.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Permission.cs",
@@ -254,51 +370,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\User.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\User.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\User.cs",
-              "RelativeToolTip": "MartManagementSystem\\User.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwAwAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ProductForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\ProductForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductForm.cs",
+              "RelativeToolTip": "MartManagementSystem\\ProductForm.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T10:33:07.794Z",
+              "WhenOpened": "2025-11-02T15:17:46.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\Form1.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs*",
-              "RelativeToolTip": "MartManagementSystem\\Form1.cs*",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAmwCkAAAAJAAAAAAAAAA==",
+              "Title": "OrderList.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\OrderList.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs [Design]*",
+              "RelativeToolTip": "MartManagementSystem\\OrderList.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T06:08:40.467Z",
+              "WhenOpened": "2025-11-02T09:01:57.053Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderList.Designer.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.Designer.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\OrderList.Designer.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.Designer.cs*",
+              "RelativeToolTip": "MartManagementSystem\\OrderList.Designer.cs*",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwGwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T13:55:26.651Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\ProductForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\ProductForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:28:08.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\OrderForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\OrderForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T13:36:38.678Z"
             },
             {
               "$type": "Document",
@@ -309,35 +415,259 @@
               "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\DashboardForm.cs [Design]",
               "RelativeToolTip": "MartManagementSystem\\DashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T09:10:13.451Z"
+              "WhenOpened": "2025-11-02T09:10:13.451Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "OrderList.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\OrderList.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs",
-              "RelativeToolTip": "MartManagementSystem\\OrderList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BrandForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\BrandForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\BrandForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T14:31:01.044Z"
+              "WhenOpened": "2025-10-31T09:07:57.411Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "dbo.Stock_details [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Stock_details.sql",
+              "ToolTip": "dbo.Stock_details [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-17T14:53:16.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SQLQuery2.sql ",
+              "DocumentMoniker": "C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\jej2gjph..sql",
+              "ToolTip": "SQLQuery2.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-17T14:54:51.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BrandForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\BrandForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs",
+              "RelativeToolTip": "MartManagementSystem\\BrandForm.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T13:20:13.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InventoryForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\InventoryForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\InventoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T03:44:51.115Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Invoice.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\Invoice.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Invoice.cs",
+              "RelativeToolTip": "MartManagementSystem\\Invoice.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T12:26:01.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\ASUS ROG\\AppData\\Local\\Temp\\ijrydsh3..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-17T14:37:09.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\OrderDetail.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderDetail.cs",
+              "RelativeToolTip": "MartManagementSystem\\OrderDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:40:13.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "OrderForm.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\OrderForm.cs",
               "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderForm.cs",
               "RelativeToolTip": "MartManagementSystem\\OrderForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANQAAAAAAAAAAAA9wM8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T09:51:22.795Z"
+              "WhenOpened": "2025-11-02T09:51:22.795Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
+              "Title": "OrderForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\OrderForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\OrderForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T13:36:38.678Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Product.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\Product.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Product.cs",
+              "RelativeToolTip": "MartManagementSystem\\Product.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA1wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:33:19.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Invoice.Designer.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Invoice.Designer.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\Invoice.Designer.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Invoice.Designer.cs",
+              "RelativeToolTip": "MartManagementSystem\\Invoice.Designer.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowIAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:53:10.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductInventory.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductInventory.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\ProductInventory.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductInventory.cs",
+              "RelativeToolTip": "MartManagementSystem\\ProductInventory.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T04:41:24.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "dbo.Order_details [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Order_details.sql",
+              "ToolTip": "dbo.Order_details [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-17T12:19:46.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "dbo.Orders [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Orders.sql",
+              "ToolTip": "dbo.Orders [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-17T12:19:44.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RoleForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\RoleForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\RoleForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\RoleForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\RoleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T08:54:34.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PurchaseForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\PurchaseForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs*",
+              "RelativeToolTip": "MartManagementSystem\\PurchaseForm.cs*",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAmwOYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T02:28:51.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PurchaseForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\PurchaseForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs [Design]*",
+              "RelativeToolTip": "MartManagementSystem\\PurchaseForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T02:28:47.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PurchaseDetail.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseDetail.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\PurchaseDetail.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseDetail.cs*",
+              "RelativeToolTip": "MartManagementSystem\\PurchaseDetail.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwCIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T10:30:02.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CategoryForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\CategoryForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\CategoryForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\CategoryForm.cs",
+              "RelativeToolTip": "MartManagementSystem\\CategoryForm.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T06:30:31.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SizeForm.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SizeForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\SizeForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SizeForm.cs",
+              "RelativeToolTip": "MartManagementSystem\\SizeForm.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T14:14:09.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "ProductSelectionForm.cs [Design]",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductSelectionForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\ProductSelectionForm.cs",
@@ -348,7 +678,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
+              "Title": "PermissionForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PermissionForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\PermissionForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PermissionForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\PermissionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:11:36.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\Form1.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs",
+              "RelativeToolTip": "MartManagementSystem\\Form1.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwBEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T06:08:40.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SizeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SizeForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\SizeForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SizeForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\SizeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:49:48.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\UserForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\UserForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\UserForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\UserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T10:22:21.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SupplierForm.cs [Design]",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SupplierForm.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\SupplierForm.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SupplierForm.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\SupplierForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T01:39:13.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\User.cs",
+              "RelativeDocumentMoniker": "MartManagementSystem\\User.cs",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\User.cs",
+              "RelativeToolTip": "MartManagementSystem\\User.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T10:33:07.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Program.cs",
@@ -360,18 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrderList.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\OrderList.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderList.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\OrderList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T09:01:57.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 43,
               "Title": "DashboardForm.Designer.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\DashboardForm.Designer.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\DashboardForm.Designer.cs",
@@ -379,11 +766,12 @@
               "RelativeToolTip": "MartManagementSystem\\DashboardForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T14:07:36.093Z"
+              "WhenOpened": "2025-11-11T14:07:36.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 40,
               "Title": "InventoryDetail.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryDetail.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\InventoryDetail.cs",
@@ -395,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 41,
               "Title": "Inventory.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Inventory.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Inventory.cs",
@@ -407,19 +795,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 42,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Form1.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs [Design]*",
-              "RelativeToolTip": "MartManagementSystem\\Form1.cs [Design]*",
+              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "MartManagementSystem\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T06:05:48.12Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-30T06:05:48.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 44,
               "Title": "CategoryForm.cs [Design]",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\CategoryForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\CategoryForm.cs",
@@ -430,29 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "InventoryForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\InventoryForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\InventoryForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:44:51.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PurchaseForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\PurchaseForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\PurchaseForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T02:28:47.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 48,
               "Title": "dbo.Menus.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Menus.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Menus.sql",
@@ -461,31 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ProductForm.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\ProductForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductForm.cs",
-              "RelativeToolTip": "MartManagementSystem\\ProductForm.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAhwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T15:17:46.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Product.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\Product.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Product.cs",
-              "RelativeToolTip": "MartManagementSystem\\Product.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAIA1wBEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T14:33:19.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 45,
               "Title": "UserForm.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\UserForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\UserForm.cs",
@@ -497,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 46,
               "Title": "Supplier.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Supplier.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Supplier.cs",
@@ -509,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 49,
               "Title": "PermissionForm.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PermissionForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\PermissionForm.cs",
@@ -517,12 +858,11 @@
               "RelativeToolTip": "MartManagementSystem\\PermissionForm.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAkwH0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T10:05:02.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T10:05:02.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 47,
               "Title": "dbo.Permission.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Permission.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__ProjectModels/mart_system_db/True/SqlTable/dbo.Permission.sql",
@@ -531,43 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PurchaseForm.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\PurchaseForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\PurchaseForm.cs",
-              "RelativeToolTip": "MartManagementSystem\\PurchaseForm.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAmwEMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T02:28:51.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Order.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\Order.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Order.cs",
-              "RelativeToolTip": "MartManagementSystem\\Order.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAD4vw0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T14:39:28.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\OrderDetail.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\OrderDetail.cs",
-              "RelativeToolTip": "MartManagementSystem\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T14:40:13.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 54,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BaseEntity.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\BaseEntity.cs",
@@ -579,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 50,
               "Title": "Brand.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Brand.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Brand.cs",
@@ -591,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 52,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Category.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Category.cs",
@@ -603,18 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "BrandForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\BrandForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs [Design]*",
-              "RelativeToolTip": "MartManagementSystem\\BrandForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T09:07:57.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 53,
               "Title": "SqlServerConnection.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SqlServerConnection.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\SqlServerConnection.cs",
@@ -626,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 51,
               "Title": "Database.sql",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\Database.sql",
               "RelativeDocumentMoniker": "Database.sql",
@@ -637,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 60,
               "Title": "Size.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Size.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Size.cs",
@@ -649,43 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "BrandForm.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\BrandForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\BrandForm.cs*",
-              "RelativeToolTip": "MartManagementSystem\\BrandForm.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T13:20:13.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "InventoryForm.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\InventoryForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\InventoryForm.cs",
-              "RelativeToolTip": "MartManagementSystem\\InventoryForm.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T03:51:00.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "DashboardForm.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\DashboardForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\DashboardForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\DashboardForm.cs",
-              "RelativeToolTip": "MartManagementSystem\\DashboardForm.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T09:42:41.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 55,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Menu.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Menu.cs",
@@ -697,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 56,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Role.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Role.cs",
@@ -709,52 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "RoleForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\RoleForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\RoleForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\RoleForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\RoleForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T08:54:34.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UserForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\UserForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\UserForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\UserForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\UserForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T10:22:21.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "SupplierForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SupplierForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\SupplierForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SupplierForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\SupplierForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T01:39:13.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ProductInventory.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductInventory.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\ProductInventory.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductInventory.cs",
-              "RelativeToolTip": "MartManagementSystem\\ProductInventory.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T04:41:24.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 63,
               "Title": "Inventory_Detal.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\Inventory_Detal.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\Inventory_Detal.cs",
@@ -766,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 57,
               "Title": "ProductSelectionForm.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductSelectionForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\ProductSelectionForm.cs",
@@ -778,7 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 58,
               "Title": "ProductSelectionForm.Designer.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\ProductSelectionForm.Designer.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\ProductSelectionForm.Designer.cs",
@@ -790,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 59,
               "Title": "SupplierForm.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SupplierForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\SupplierForm.cs",
@@ -802,30 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "SizeForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SizeForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\SizeForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\SizeForm.cs [Design]",
-              "RelativeToolTip": "MartManagementSystem\\SizeForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T08:49:48.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "CategoryForm.cs",
-              "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\CategoryForm.cs",
-              "RelativeDocumentMoniker": "MartManagementSystem\\CategoryForm.cs",
-              "ToolTip": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\CategoryForm.cs",
-              "RelativeToolTip": "MartManagementSystem\\CategoryForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T06:30:31.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 61,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\RegisterForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\RegisterForm.cs",
@@ -836,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 62,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "D:\\Computer Language\\Projects\\MartSystemWinForm\\MartManagementSystem\\RegisterForm.cs",
               "RelativeDocumentMoniker": "MartManagementSystem\\RegisterForm.cs",

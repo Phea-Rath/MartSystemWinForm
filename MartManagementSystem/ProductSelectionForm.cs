@@ -14,10 +14,16 @@ namespace MartManagementSystem
     {
         public event EventHandler RefreshListProduct;
         Product _pro = new Product();
-        public ProductSelectionForm()
+        ProductForm _form;
+        public ProductSelectionForm(ProductForm form)
         {
             InitializeComponent();
+            _form = form;
             LoadComboboxes();
+            this.Shown +=(s,e)=> LoadComboboxes();
+            this.FormClosed += (s, e) => LoadComboboxes();
+            this.FormClosing += (s, e) => LoadComboboxes();
+            _form.ProductChanged += (s, e) => LoadComboboxes();
         }
 
         private void setField()
@@ -68,6 +74,8 @@ namespace MartManagementSystem
             decimal? unit_price = Convert.ToDecimal(txtUnitPrice.Text);
             int? quantity = Convert.ToInt32(txtQuantity.Text);
             decimal? cost = Convert.ToDecimal(txtCost.Text);
+            DateTime? date = dtpExpD.Value;
+            if(PurchaseDetail.products.Count <= 0) PurchaseDetail.products = new List<PurchaseDetail>();
 
             PurchaseDetail.products.Add(new PurchaseDetail()
             {
@@ -76,9 +84,10 @@ namespace MartManagementSystem
                 UnitPrice = (decimal)unit_price,
                 Quantity = (int)quantity,
                 CostPrice = (decimal)cost,
-                SubTotal = (decimal)cost * (int)quantity
+                SubTotal = (decimal)cost * (int)quantity,
+                ExpireDate = (DateTime)date,
             });
-            RefreshListProduct.Invoke(this, new EventArgs());
+            RefreshListProduct.Invoke(this, e);
             setField();
         }
     }

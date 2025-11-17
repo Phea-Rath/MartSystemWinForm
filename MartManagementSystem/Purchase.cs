@@ -62,8 +62,8 @@ namespace MartManagementSystem
                     if (purchaseId <= 0) throw new Exception("Insert purchase failed.");
 
                     string query_detail = @"
-                INSERT INTO Purchase_details (purchase_id, item_id, cost_price, quantity, total)
-                VALUES (@purchase_id, @item_id, @cost_price, @quantity, @total)";
+                INSERT INTO Purchase_details (purchase_id, item_id, cost_price, quantity, expire_date, total)
+                VALUES (@purchase_id, @item_id, @cost_price, @quantity, @expire_date, @total)";
 
                     foreach (var d in details)
                     {
@@ -72,6 +72,7 @@ namespace MartManagementSystem
                         cmdDetail.Parameters.Add("@item_id", SqlDbType.Int).Value = d.ProductId;
                         cmdDetail.Parameters.Add("@cost_price", SqlDbType.Decimal).Value = d.CostPrice;
                         cmdDetail.Parameters.Add("@quantity", SqlDbType.Int).Value = d.Quantity;
+                        cmdDetail.Parameters.Add("@expire_date", SqlDbType.DateTime).Value = d.ExpireDate;
                         cmdDetail.Parameters.Add("@total", SqlDbType.Decimal).Value = d.SubTotal;
                         cmdDetail.ExecuteNonQuery();
                     }
@@ -200,8 +201,8 @@ namespace MartManagementSystem
 
                     // 3️⃣ Insert new PurchaseDetails
                     string queryInsertDetail = @"
-            INSERT INTO Purchase_details (purchase_id, item_id, cost_price, quantity, total)
-            VALUES (@purchase_id, @item_id, @cost_price, @quantity, @total)";
+            INSERT INTO Purchase_details (purchase_id, item_id, cost_price, quantity, expire_date, total)
+            VALUES (@purchase_id, @item_id, @cost_price, @quantity, @expire_date, @total)";
 
                     foreach (var d in details)
                     {
@@ -210,6 +211,7 @@ namespace MartManagementSystem
                         cmdDetail.Parameters.AddWithValue("@item_id", d.ProductId);
                         cmdDetail.Parameters.AddWithValue("@cost_price", d.CostPrice);
                         cmdDetail.Parameters.AddWithValue("@quantity", d.Quantity);
+                        cmdDetail.Parameters.AddWithValue("@expire_date", d.ExpireDate);
                         cmdDetail.Parameters.AddWithValue("@total", d.SubTotal);
                         cmdDetail.ExecuteNonQuery();
                     }

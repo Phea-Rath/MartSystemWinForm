@@ -16,19 +16,20 @@ namespace MartManagementSystem
 {
     public partial class LayoutForm : Form
     {
+        public event EventHandler OpenDashboard;
         CategoryForm categoryForm = new CategoryForm();
         SizeForm sizeForm = new SizeForm();
         BrandForm brandForm = new BrandForm();
-        ProductForm productForm = new ProductForm();
-        PurchaseForm purchaseForm = new PurchaseForm();
-        SupplierForm supplierForm = new SupplierForm(); 
-        InventoryForm inventoryForm = new InventoryForm();
+        ProductForm productForm;
+        PurchaseForm purchaseForm;
+        SupplierForm supplierForm = new SupplierForm();
+        InventoryForm inventoryForm;
         RoleForm roleForm = new RoleForm();
-        UserForm userForm = new UserForm();
+        UserForm userForm;
         PermissionForm permissionForm = new PermissionForm();
-        OrderForm orderForm = new OrderForm();
-        DashboardForm dashboardForm = new DashboardForm();
-        OrderList orderListForm = new OrderList();
+        OrderForm orderForm;
+        DashboardForm dashboardForm;
+        OrderList orderListForm;
         public List<Form> formList = new List<Form>();
         Form1 _loginForm;
         private string _username;
@@ -36,6 +37,13 @@ namespace MartManagementSystem
         public LayoutForm(Form1 loginForm, string username,int user_id)
         {
             InitializeComponent();
+            dashboardForm = new DashboardForm(this);
+            purchaseForm = new PurchaseForm(supplierForm);
+            inventoryForm = new InventoryForm(purchaseForm);
+            productForm = new ProductForm(categoryForm,brandForm,sizeForm);
+            orderForm = new OrderForm(purchaseForm,inventoryForm);
+            orderListForm = new OrderList(orderForm);
+            userForm = new UserForm(roleForm);
             _loginForm = loginForm;
             _username = username;
             _user_id = user_id;
@@ -65,7 +73,7 @@ namespace MartManagementSystem
             };
             orderListForm.handleOrder += (s, e) =>
             {
-                activeForm(orderListForm);
+                activeForm(orderForm);
             };
 
             LoadPermission();
@@ -175,6 +183,7 @@ namespace MartManagementSystem
                 if (btn == form)
                 {
                     btn.Show();
+                    OpenDashboard?.Invoke(this,EventArgs.Empty);
                 }
                 else
                 {

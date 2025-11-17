@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace MartManagementSystem
 {
-    internal class Product : BaseEntity
+    public class Product : BaseEntity
     {
         public static List<Product> ProductList { get; set; } = new List<Product>();
 

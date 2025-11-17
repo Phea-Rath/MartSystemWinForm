@@ -13,6 +13,7 @@ namespace MartManagementSystem
     public partial class RoleForm : Form
     {
         Role role = new Role();
+        public event EventHandler RoleChanged;
 
         public RoleForm()
         {
@@ -65,6 +66,7 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
 
             dgvData.Refresh();
+            RoleChanged?.Invoke(this, EventArgs.Empty);
         }
 
         // Create new role

@@ -25,7 +25,8 @@ namespace MartManagementSystem
         private void LoadComboBoxes()
         {
             _user.GetAllUsers();
-            cbUser.DataSource = User.UserList;
+            var users = User.UserList.Where((u) => u.UserId != User.UserLogin[0].UserId).ToList();
+            cbUser.DataSource = users;
             cbUser.DisplayMember = "UserName";
             cbUser.ValueMember = "UserId";
             cbUser.SelectedIndex = -1;

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace MartManagementSystem
 {
-    internal class Order : BaseEntity
+    public class Order : BaseEntity
     {
         public int OrderId { get; set; }
         public decimal SubTotalPrice { get; set; }

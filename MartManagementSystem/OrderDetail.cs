@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace MartManagementSystem
 {
-    internal class OrderDetail:Product
+    public class OrderDetail:Product
     {
         public static List<OrderDetail> orderItems { get; set; } = new List<OrderDetail>();
         public int OrderId { get; set; }

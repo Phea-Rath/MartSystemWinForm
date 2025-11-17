@@ -631,6 +631,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "LayoutForm";
             this.Text = "Mart System";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

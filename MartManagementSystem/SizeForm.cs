@@ -13,7 +13,7 @@ namespace MartManagementSystem
     public partial class SizeForm : Form
     {
         Sizes size = new Sizes();
-
+        public event EventHandler SizeChanged;
         public SizeForm()
         {
             InitializeComponent();
@@ -59,6 +59,8 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
 
             dgvData.Refresh();
+
+            SizeChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void btnNew_Click(object sender, EventArgs e)

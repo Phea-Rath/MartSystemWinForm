@@ -41,3 +41,4 @@ D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\M
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.OrderForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.DashboardForm.resources
 D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.OrderList.resources
+D:\Computer Language\Projects\MartSystemWinForm\MartManagementSystem\obj\Debug\MartManagementSystem.Invoice.resources

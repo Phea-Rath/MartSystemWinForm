@@ -14,6 +14,7 @@ namespace MartManagementSystem
     {
         //User user = new User();
         Brand brand = new Brand();
+        public event EventHandler BrandChanged;
         public BrandForm()
         {
             InitializeComponent();
@@ -56,6 +57,7 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
 
             dgvData.Refresh();
+            BrandChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void btnNew_Click(object sender, EventArgs e)

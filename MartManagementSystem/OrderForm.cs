@@ -19,13 +19,53 @@ namespace MartManagementSystem
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
         
         public event EventHandler handleOrderList;
-        public OrderForm()
+        PurchaseForm _pur;
+        InventoryForm _inv;
+        public OrderForm(PurchaseForm pur,InventoryForm inv)
         {
             InitializeComponent();
+            this._pur = pur;
+            this._inv = inv;
             InventoryDetail.GetSaleItems();
             LoadProducts(InventoryDetail.saleList);
             LoadOrderItems(OrderDetail.orderItems);
             LoadCategory(Category.CategoryList);
+            this.Shown += (s, e) =>
+            {
+                InventoryDetail.GetSaleItems();
+                LoadProducts(InventoryDetail.saleList);
+                LoadOrderItems(OrderDetail.orderItems);
+                LoadCategory(Category.CategoryList);
+            }; 
+            this.FormClosed += (s, e) =>
+            {
+                InventoryDetail.GetSaleItems();
+                LoadProducts(InventoryDetail.saleList);
+                LoadOrderItems(OrderDetail.orderItems);
+                LoadCategory(Category.CategoryList);
+            }; 
+            this.FormClosing += (s, e) =>
+            {
+                InventoryDetail.GetSaleItems();
+                LoadProducts(InventoryDetail.saleList);
+                LoadOrderItems(OrderDetail.orderItems);
+                LoadCategory(Category.CategoryList);
+            };
+            _pur.PurchaseChanged += (s, e) =>
+            {
+                InventoryDetail.GetSaleItems();
+                LoadProducts(InventoryDetail.saleList);
+                LoadOrderItems(OrderDetail.orderItems);
+                LoadCategory(Category.CategoryList);
+            };
+            _inv.InventoriesChanged += (s, e) =>
+            {
+                InventoryDetail.GetSaleItems();
+                LoadProducts(InventoryDetail.saleList);
+                LoadOrderItems(OrderDetail.orderItems);
+                LoadCategory(Category.CategoryList);
+            };
+
         }
         private TableLayoutPanel CreateListOrder(OrderDetail p)
         {
@@ -179,7 +219,23 @@ namespace MartManagementSystem
             btnCat.Click += (s, e) =>
             {
                 // Action
-                MessageBox.Show("Added: " + b.CategoryName);
+                if (string.IsNullOrEmpty(b.CategoryName))
+                {
+                    // Show all
+
+                    LoadProducts(InventoryDetail.saleList);
+                }
+                else
+                {
+                    // Filter list (case-insensitive, partial match)
+                    var newList = InventoryDetail.saleList
+                        .Where(p => !string.IsNullOrEmpty(p.CategoryName) &&
+                                    p.CategoryName.IndexOf(b.CategoryName, StringComparison.OrdinalIgnoreCase) >= 0)
+                        .ToList();
+
+
+                    LoadProducts(newList);
+                }
             };
             return btnCat;
         }
@@ -337,7 +393,7 @@ namespace MartManagementSystem
         private void OrderChange()
         {
             decimal supTotal = OrderDetail.orderItems.Sum(i => i.TotalPrice);
-            decimal disTotal = OrderDetail.orderItems.Sum(i => (i.Discount / 100) > 0 ? (i.Discount / 100) * i.UnitPrice : i.UnitPrice);
+            decimal disTotal = OrderDetail.orderItems.Sum(i => (i.Discount / 100) * i.UnitPrice);
             lblSup.Text = supTotal.ToString("N2");
             lblDisPrice.Text = disTotal.ToString("N2");
             lblTotalPrice.Text = (supTotal - disTotal).ToString("N2");
@@ -418,12 +474,39 @@ namespace MartManagementSystem
                 PaymentMethod = cbPayMeth.Text
             };
             bool res = Order.InsertOrder(order, OrderDetail.orderItems);
-            if (res) setField();
+            if (res)
+            {
+                setField();
+                handleOrderList?.Invoke(this, EventArgs.Empty);
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             setField();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string find = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(find))
+            {
+                // Show all
+
+                LoadProducts(InventoryDetail.saleList);
+            }
+            else
+            {
+                // Filter list (case-insensitive, partial match)
+                var newList = InventoryDetail.saleList
+                    .Where(p => !string.IsNullOrEmpty(p.ProductName) &&
+                                p.ProductName.IndexOf(find, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+
+
+                LoadProducts(newList);
+            }
         }
     }
 }

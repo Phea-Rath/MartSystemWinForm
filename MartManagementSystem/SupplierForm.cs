@@ -13,6 +13,7 @@ namespace MartManagementSystem
     public partial class SupplierForm : Form
     {
         Supplier supplier = new Supplier();
+        public event EventHandler SupplierChanged;
 
         public SupplierForm()
         {
@@ -67,6 +68,7 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
 
             dgvData.Refresh();
+            SupplierChanged?.Invoke(this, EventArgs.Empty);
         }
 
         // Create new supplier

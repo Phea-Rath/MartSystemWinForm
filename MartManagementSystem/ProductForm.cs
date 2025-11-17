@@ -22,12 +22,23 @@ namespace MartManagementSystem
         Brand brand = new Brand();
         Sizes size = new Sizes();
 
-        public ProductForm()
+        CategoryForm _cat;
+        BrandForm _bra;
+        SizeForm _size;
+        public event EventHandler ProductChanged;
+
+        public ProductForm(CategoryForm cat, BrandForm bra, SizeForm siz)
         {
             InitializeComponent();
+            _cat = cat;
+            _bra = bra;
+            _size = siz;
             dgvData.RowPostPaint += dgvData_RowPostPaint;
             LoadData();
             LoadComboboxes();
+            _cat.CategoryChanged += (s, e) => LoadComboboxes();
+            _bra.BrandChanged += (s, e) => LoadComboboxes();
+            _size.SizeChanged += (s, e) => LoadComboboxes();
         }
 
         private void setField()
@@ -81,6 +92,7 @@ namespace MartManagementSystem
             dgvData.Columns["IsDeleted"].Visible = false;
 
             dgvData.Refresh();
+            ProductChanged?.Invoke(this, EventArgs.Empty);
         }
 
         private void LoadComboboxes()
@@ -144,7 +156,7 @@ namespace MartManagementSystem
                 {
                     pbImage.Image = Image.FromFile(ofd.FileName);
                     pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                    txtImageUrl.Text = ofd.FileName; 
+                    txtImageUrl.Text = ofd.FileName;
                 }
             }
         }
@@ -249,6 +261,33 @@ namespace MartManagementSystem
                     LoadData();
                 }
             }
+        }
+    
+
+    private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string find = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(find))
+            {
+                // Show all
+                dgvData.DataSource = Product.ProductList;
+            }
+            else
+            {
+                // Filter list (case-insensitive, partial match)
+                var newList = Product.ProductList
+                    .Where(p => !string.IsNullOrEmpty(p.ProductName) &&
+                                p.ProductName.IndexOf(find, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+
+                dgvData.DataSource = newList;
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            setField();
         }
     }
 }

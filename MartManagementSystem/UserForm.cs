@@ -18,13 +18,15 @@ namespace MartManagementSystem
         Role role = new Role();
         User user = new User();
         ComponentResourceManager resources = new ComponentResourceManager(typeof(UserForm));
-
-        public UserForm()
+        RoleForm _role;
+        public UserForm(RoleForm role)
         {
             InitializeComponent();
             dgvData.RowPostPaint += dgvData_RowPostPaint;
             LoadData();
             LoadRole();
+            _role = role;
+            _role.RoleChanged += (s, e) => LoadRole();
         }
 
         private void ClearField()
@@ -221,6 +223,32 @@ namespace MartManagementSystem
                     LoadData();
                 }
             }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string find = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(find))
+            {
+                // Show all
+                dgvData.DataSource = User.UserList;
+            }
+            else
+            {
+                // Filter list (case-insensitive, partial match)
+                var newList = User.UserList
+                    .Where(p => !string.IsNullOrEmpty(p.UserName) &&
+                                p.UserName.IndexOf(find, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+
+                dgvData.DataSource = newList;
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearField();
         }
     }
 }

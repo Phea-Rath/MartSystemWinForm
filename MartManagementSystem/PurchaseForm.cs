@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,25 @@ namespace MartManagementSystem
 {
     public partial class PurchaseForm : Form
     {
-        ProductSelectionForm productSelectionForm = new ProductSelectionForm();
+        CategoryForm categoryForm = new CategoryForm();
+        SizeForm sizeForm = new SizeForm();
+        BrandForm brandForm = new BrandForm();
+        ProductSelectionForm productSelectionForm;
         Supplier _sup = new Supplier();
-        public PurchaseForm()
+        SupplierForm supplierForm;
+        List<Purchase> purchaseList = new List<Purchase>();
+        public event EventHandler PurchaseChanged;
+        ProductForm productForm; 
+        public PurchaseForm(SupplierForm supp)
         {
             InitializeComponent();
+            productForm = new ProductForm(categoryForm, brandForm, sizeForm);
+            supplierForm = supp;
+            productSelectionForm = new ProductSelectionForm(productForm);
             LoadData();
             LoadComboBoxse();
-            productSelectionForm.RefreshListProduct += LoadList;
+            productSelectionForm.RefreshListProduct +=(s,e)=> LoadList();
+            supplierForm.SupplierChanged += (s, e) => LoadComboBoxse();
         }
 
         private void LoadComboBoxse()
@@ -29,6 +41,21 @@ namespace MartManagementSystem
             cbSupplier.DisplayMember = "SupplierName";
             cbSupplier.ValueMember = "SupplierId";
             cbSupplier.SelectedIndex = -1;
+        }
+
+        private void resetForm()
+        {
+            cbStatus.Text = string.Empty;
+            cbSupplier.SelectedIndex = -1;
+            txtAmount.Text = "0";
+            txtBalance.Text = "0";
+            txtFee.Text = "0";
+            txtId.Text = string.Empty;
+            rtDes.Text = string.Empty;
+            dgvItem.DataSource = null;
+            txtSupTotal.Text = string.Empty;
+            txtTax.Text = string.Empty;
+            txtPayment.Text = string.Empty;
         }
 
         private void dgvData_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -42,7 +69,7 @@ namespace MartManagementSystem
         private void LoadData()
         {
             dgvData.DataSource = null;
-            var purchaseList = Purchase.GetAllPurchases();
+            purchaseList = Purchase.GetAllPurchases();
             dgvData.DataSource = purchaseList;
             if (!dgvData.Columns.Contains("No"))
             {
@@ -59,12 +86,18 @@ namespace MartManagementSystem
             dgvData.Columns["SupplierId"].Visible = false;
             dgvData.Columns["CreatedBy"].Visible = false;
             dgvData.Columns["IsDeleted"].Visible = false;
+
+            dgvData.Refresh();
+            PurchaseChanged?.Invoke(this, EventArgs.Empty);
         }
 
-        private void LoadList(object sender,EventArgs e)
+        private void LoadList()
         {
+            List<PurchaseDetail> list = new List<PurchaseDetail>();
             dgvItem.DataSource = null;
-            dgvItem.DataSource = PurchaseDetail.products;
+            dgvItem.ClearSelection();
+            list = PurchaseDetail.products;
+            dgvItem.DataSource = list;
             dgvItem.Columns["ProductId"].DisplayIndex = 0;
             dgvItem.Columns["ProductName"].DisplayIndex = 1;
             dgvItem.Columns["CostPrice"].DisplayIndex = 2;
@@ -85,7 +118,6 @@ namespace MartManagementSystem
             dgvItem.Columns["Product"].Visible = false;
             dgvItem.Columns["Purchase"].Visible = false;
             dgvItem.Columns["PurchaseId"].Visible = false;
-            dgvItem.Columns["Tax"].Visible = false;
             dgvItem.Columns["IsDeleted"].Visible = false;
             dgvItem.Columns["ProductCode"].Visible = false;
             dgvItem.Columns["Discount"].Visible = false;
@@ -95,6 +127,8 @@ namespace MartManagementSystem
             txtSupTotal.Text = subTotal.ToString();
             txtAmount.Text = subTotal.ToString();
             txtBalance.Text = subTotal.ToString();
+
+            dgvItem.Refresh();
         }
 
         private void btnAddItem_Click(object sender, EventArgs e)
@@ -108,8 +142,8 @@ namespace MartManagementSystem
             if (dgvItem.CurrentRow == null) return;
 
             int _id = Convert.ToInt32(dgvItem.CurrentRow.Cells["ProductId"].Value);
-            PurchaseDetail.products = PurchaseDetail.products.Where((p)=>p.ProductId != _id).ToList();
-            LoadList(sender,e);
+            PurchaseDetail.products = PurchaseDetail.products.Where((p) => p.ProductId != _id).ToList();
+            LoadList();
         }
 
         //private void txtDis_TextChanged(object sender, EventArgs e) => CalculateAmount();
@@ -180,6 +214,7 @@ namespace MartManagementSystem
             if(res)
             {
                 LoadData();
+                resetForm();
             }
         }
 
@@ -197,9 +232,10 @@ namespace MartManagementSystem
             txtBalance.Text = dgvData.CurrentRow.Cells["Balance"].Value.ToString();
             txtPayment.Text = dgvData.CurrentRow.Cells["Payment"].Value.ToString();
             rtDes.Text = dgvData.CurrentRow.Cells["Description"].Value.ToString();
-            var purdetails = PurchaseDetail.GetPurchaseDetailsByPurchaseId(Convert.ToInt32(id));
+            
             dgvItem.DataSource = null;
-            dgvItem.DataSource = purdetails;
+            PurchaseDetail.GetPurchaseDetailsByPurchaseId(Convert.ToInt32(id));
+            dgvItem.DataSource = PurchaseDetail.products;
             dgvItem.Columns["ProductId"].DisplayIndex = 0;
             dgvItem.Columns["ProductName"].DisplayIndex = 1;
             dgvItem.Columns["CostPrice"].DisplayIndex = 2;
@@ -223,6 +259,8 @@ namespace MartManagementSystem
             dgvItem.Columns["ProductCode"].Visible = false;
             dgvItem.Columns["Discount"].Visible = false;
             dgvItem.Columns["Description"].Visible = false;
+
+            dgvItem.Refresh();
         }
 
         private void btnUp_Click(object sender, EventArgs e)
@@ -266,6 +304,7 @@ namespace MartManagementSystem
             if (res)
             {
                 LoadData();
+                resetForm();
             }
         }
 
@@ -282,5 +321,91 @@ namespace MartManagementSystem
                 if (res)LoadData();
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            resetForm();
+        }
+
+        private void btnAddStock_Click(object sender, EventArgs e)
+        {
+
+            if (dgvData.Rows.Count <= 0) return;
+            if (dgvData.CurrentRow == null) return;
+            int id = Convert.ToInt32(dgvData.CurrentRow.Cells["PurchaseId"].Value);
+            DialogResult result = MessageBox.Show("Are you sure You want add into Inventory?", "Add Inventory", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.OK)
+            {
+                Inventory inven = new Inventory()
+                {
+                    Description = dgvData.CurrentRow.Cells["Description"].Value.ToString(),
+                    CreatedBy = User.UserLogin[0].UserId
+                };
+                InventoryDetail.InventoryDetailList = new List<InventoryDetail>();
+                foreach (var item in PurchaseDetail.products)
+                {
+                    InventoryDetail.InventoryDetailList.Add(new InventoryDetail()
+                    {
+                        ProductId = item.ProductId,
+                        Quantity = item.Quantity,
+                        ExpireDate = item.ExpireDate,
+                    });
+                }
+                if (InventoryDetail.InventoryDetailList == null) return;
+
+                bool res = Inventory.InsertInventory(inven, InventoryDetail.InventoryDetailList);
+
+                if (res) {
+                    SqlConnection conn = SqlServerConnection.GetConnection();
+                    try
+                    {
+                        string query = "UPDATE Purchases SET status = 'Completed' WHERE purchase_id = @id";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@id", id);
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message, "Error AddStock");
+                    }
+                    LoadData(); 
+                    PurchaseChanged?.Invoke(this, EventArgs.Empty);
+                    InventoryDetail.InventoryDetailList = null;
+                }
+
+            }
+        }
+
+        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvData.Rows.Count <= 0) return;
+            if (dgvData.CurrentRow == null) return;
+            string status = dgvData.CurrentRow.Cells["Status"].Value.ToString();
+            if(status == "Pending")btnStock.Visible = true;
+            else btnStock.Visible = false;
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string find = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(find))
+            {
+                // Show all
+                dgvData.DataSource = purchaseList;
+            }
+            else
+            {
+                // Filter list (case-insensitive, partial match)
+                var newList = purchaseList
+                    .Where(p => !string.IsNullOrEmpty(p.SupplierName) &&
+                                p.SupplierName.IndexOf(find, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+
+                dgvData.DataSource = newList;
+            }
+        }
+
     }
 }
