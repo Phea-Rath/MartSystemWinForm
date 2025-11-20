@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,17 +15,53 @@ namespace MartManagementSystem
     public partial class InventoryForm : Form
     {
         PurchaseForm _pur;
+        ProductForm _product;
         public event EventHandler InventoriesChanged;
-        public InventoryForm(PurchaseForm pur)
+        public InventoryForm(PurchaseForm pur, ProductForm pro)
         {
             InitializeComponent();
+            _product = pro;
             _pur = pur;
             LoadData();
+            LoadComboboxes();
+            _pur.PurchaseChanged += (s, e) => LoadData();
+            _product.ProductChanged += (s, e) => LoadComboboxes();
+        }
+
+        private void LoadComboboxes()
+        {
             cbProduct.DataSource = Product.ProductList;
             cbProduct.DisplayMember = "ProductName";
             cbProduct.ValueMember = "ProductId";
             cbProduct.SelectedIndex = -1;
-            _pur.PurchaseChanged += (s, e) => LoadData();
+        }
+
+        private int ProductInStock(int proId)
+        {
+            SqlConnection conn = SqlServerConnection.GetConnection();
+            string query = @"SELECT COALESCE(SUM(quantity),0) AS total FROM Stock_details 
+                            WHERE is_deleted = 0 AND item_id = @id";
+            string queryOrder = @"SELECT COALESCE(SUM(quantity),0) AS total FROM Purchase_details
+                            WHERE is_deleted = 0 AND item_id = @id";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@id", proId);
+            SqlCommand cmdPur = new SqlCommand(queryOrder, conn);
+            cmdPur.Parameters.AddWithValue("@id", proId);
+            try
+            {
+                int res = Convert.ToInt32(cmd.ExecuteScalar());
+                int resPur = Convert.ToInt32(cmdPur.ExecuteScalar());
+                if (resPur > 0)
+                {
+                    return resPur - res;
+                }
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error TotalOfInventory");
+                return 0;
+            }
         }
 
         private void setForm()
@@ -108,6 +145,7 @@ namespace MartManagementSystem
             int productId = (int)cbProduct.SelectedValue;
             string productName = Product.ProductList.FirstOrDefault((p) => p.ProductId == productId)?.ProductName;
             DateTime expiryDate = dtpExpire.Value;
+            btnAddItem.Enabled = false;
             InventoryDetail.InventoryDetailList.Add(new InventoryDetail()
             {
                 ProductName = productName,
@@ -115,6 +153,7 @@ namespace MartManagementSystem
                 Quantity = quantity,
                 ExpireDate = expiryDate,
             });
+            btnAddItem.Enabled = true;
             LoadItemList();
         }
 
@@ -124,7 +163,11 @@ namespace MartManagementSystem
             if(dgvItem.CurrentRow == null) return;
 
             int id = Convert.ToInt32(dgvItem.CurrentRow.Cells["ProductId"].Value);
-            InventoryDetail.InventoryDetailList = InventoryDetail.InventoryDetailList.Where((p)=>p.ProductId != id).ToList();
+            InventoryDetail.InventoryDetailList =
+    (InventoryDetail.InventoryDetailList ?? new List<InventoryDetail>())
+    .Where(p => p.ProductId != id)
+    .ToList();
+
             LoadItemList();
         }
 
@@ -154,7 +197,11 @@ namespace MartManagementSystem
 
         private void btnUp_Click(object sender, EventArgs e)
         {
-            if (InventoryDetail.InventoryDetailList.Count <= 0) return;
+            if (txtId.Text.Equals(""))
+            {
+                MessageBox.Show("⚠ Please select an item to update."); return;
+            }
+                if (InventoryDetail.InventoryDetailList.Count <= 0) return;
             Inventory inven = new Inventory()
             {
                 InventoryId = Convert.ToInt32(txtId.Text),
@@ -203,6 +250,16 @@ namespace MartManagementSystem
         private void btnClear_Click(object sender, EventArgs e)
         {
             setForm();
+        }
+
+        private void cbProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbProduct.SelectedValue != null)
+            {
+                int _id = Convert.ToInt32(cbProduct.SelectedValue as int?);
+                int quan = ProductInStock(_id);
+                txtQuan.Text = quan.ToString();
+            }
         }
     }
 }

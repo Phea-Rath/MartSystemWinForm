@@ -98,5 +98,7 @@ namespace MartManagementSystem
                 flpItem.Controls.Add(tlp);
             }
         }
+
+       
     }
 }

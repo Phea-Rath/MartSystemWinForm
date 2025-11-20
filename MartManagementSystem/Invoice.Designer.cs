@@ -32,19 +32,19 @@
             this.lblOrderId = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.flpItem = new System.Windows.Forms.FlowLayoutPanel();
-            this.tlpList = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.lblSup = new System.Windows.Forms.Label();
             this.lblSupPrice = new System.Windows.Forms.Label();
             this.lblDis = new System.Windows.Forms.Label();
             this.lblDisPrice = new System.Windows.Forms.Label();
-            this.lblQuan = new System.Windows.Forms.Label();
             this.lblPmValue = new System.Windows.Forms.Label();
             this.lblPM = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.flpItem = new System.Windows.Forms.FlowLayoutPanel();
+            this.tlpList = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblQuan = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flpItem.SuspendLayout();
@@ -111,6 +111,94 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(368, 125);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
+            // lblSup
+            // 
+            this.lblSup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSup.AutoSize = true;
+            this.lblSup.Location = new System.Drawing.Point(8, 5);
+            this.lblSup.Name = "lblSup";
+            this.lblSup.Size = new System.Drawing.Size(173, 13);
+            this.lblSup.TabIndex = 0;
+            this.lblSup.Text = "SupTotal";
+            // 
+            // lblSupPrice
+            // 
+            this.lblSupPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSupPrice.AutoSize = true;
+            this.lblSupPrice.Location = new System.Drawing.Point(187, 13);
+            this.lblSupPrice.Name = "lblSupPrice";
+            this.lblSupPrice.Size = new System.Drawing.Size(173, 13);
+            this.lblSupPrice.TabIndex = 0;
+            this.lblSupPrice.Text = "$123.00";
+            this.lblSupPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblDis
+            // 
+            this.lblDis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDis.AutoSize = true;
+            this.lblDis.Location = new System.Drawing.Point(8, 35);
+            this.lblDis.Name = "lblDis";
+            this.lblDis.Size = new System.Drawing.Size(173, 13);
+            this.lblDis.TabIndex = 0;
+            this.lblDis.Text = "Discount";
+            // 
+            // lblDisPrice
+            // 
+            this.lblDisPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDisPrice.AutoSize = true;
+            this.lblDisPrice.Location = new System.Drawing.Point(187, 43);
+            this.lblDisPrice.Name = "lblDisPrice";
+            this.lblDisPrice.Size = new System.Drawing.Size(173, 13);
+            this.lblDisPrice.TabIndex = 1;
+            this.lblDisPrice.Text = "$2.00";
+            this.lblDisPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblPmValue
+            // 
+            this.lblPmValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPmValue.AutoSize = true;
+            this.lblPmValue.Location = new System.Drawing.Point(187, 73);
+            this.lblPmValue.Name = "lblPmValue";
+            this.lblPmValue.Size = new System.Drawing.Size(173, 13);
+            this.lblPmValue.TabIndex = 2;
+            this.lblPmValue.Text = "Bank";
+            this.lblPmValue.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblPM
+            // 
+            this.lblPM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPM.AutoSize = true;
+            this.lblPM.Location = new System.Drawing.Point(8, 65);
+            this.lblPM.Name = "lblPM";
+            this.lblPM.Size = new System.Drawing.Size(173, 13);
+            this.lblPM.TabIndex = 2;
+            this.lblPM.Text = "Payment Method";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(8, 95);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(173, 13);
+            this.lblTotal.TabIndex = 2;
+            this.lblTotal.Text = "Total";
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(187, 103);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(173, 13);
+            this.lblTotalPrice.TabIndex = 2;
+            this.lblTotalPrice.Text = "$345.00";
+            this.lblTotalPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // flpItem
             // 
             this.flpItem.Controls.Add(this.tlpList);
@@ -160,50 +248,6 @@
             this.lblTitle.Text = "label3";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblSup
-            // 
-            this.lblSup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSup.AutoSize = true;
-            this.lblSup.Location = new System.Drawing.Point(8, 5);
-            this.lblSup.Name = "lblSup";
-            this.lblSup.Size = new System.Drawing.Size(173, 13);
-            this.lblSup.TabIndex = 0;
-            this.lblSup.Text = "SupTotal";
-            // 
-            // lblSupPrice
-            // 
-            this.lblSupPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSupPrice.AutoSize = true;
-            this.lblSupPrice.Location = new System.Drawing.Point(187, 13);
-            this.lblSupPrice.Name = "lblSupPrice";
-            this.lblSupPrice.Size = new System.Drawing.Size(173, 13);
-            this.lblSupPrice.TabIndex = 0;
-            this.lblSupPrice.Text = "$123.00";
-            this.lblSupPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblDis
-            // 
-            this.lblDis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDis.AutoSize = true;
-            this.lblDis.Location = new System.Drawing.Point(8, 35);
-            this.lblDis.Name = "lblDis";
-            this.lblDis.Size = new System.Drawing.Size(173, 13);
-            this.lblDis.TabIndex = 0;
-            this.lblDis.Text = "Discount";
-            // 
-            // lblDisPrice
-            // 
-            this.lblDisPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDisPrice.AutoSize = true;
-            this.lblDisPrice.Location = new System.Drawing.Point(187, 43);
-            this.lblDisPrice.Name = "lblDisPrice";
-            this.lblDisPrice.Size = new System.Drawing.Size(173, 13);
-            this.lblDisPrice.TabIndex = 1;
-            this.lblDisPrice.Text = "$2.00";
-            this.lblDisPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
             // lblQuan
             // 
             this.lblQuan.AutoSize = true;
@@ -212,50 +256,6 @@
             this.lblQuan.Size = new System.Drawing.Size(24, 13);
             this.lblQuan.TabIndex = 1;
             this.lblQuan.Text = "x10";
-            // 
-            // lblPmValue
-            // 
-            this.lblPmValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPmValue.AutoSize = true;
-            this.lblPmValue.Location = new System.Drawing.Point(187, 73);
-            this.lblPmValue.Name = "lblPmValue";
-            this.lblPmValue.Size = new System.Drawing.Size(173, 13);
-            this.lblPmValue.TabIndex = 2;
-            this.lblPmValue.Text = "Bank";
-            this.lblPmValue.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblPM
-            // 
-            this.lblPM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPM.AutoSize = true;
-            this.lblPM.Location = new System.Drawing.Point(8, 65);
-            this.lblPM.Name = "lblPM";
-            this.lblPM.Size = new System.Drawing.Size(173, 13);
-            this.lblPM.TabIndex = 2;
-            this.lblPM.Text = "Payment Method";
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(8, 95);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(173, 13);
-            this.lblTotal.TabIndex = 2;
-            this.lblTotal.Text = "Total";
-            // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Location = new System.Drawing.Point(187, 103);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(173, 13);
-            this.lblTotalPrice.TabIndex = 2;
-            this.lblTotalPrice.Text = "$345.00";
-            this.lblTotalPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Invoice
             // 

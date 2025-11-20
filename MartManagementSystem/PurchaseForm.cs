@@ -265,6 +265,10 @@ namespace MartManagementSystem
 
         private void btnUp_Click(object sender, EventArgs e)
         {
+            if (txtId.Text.Equals(""))
+            {
+                MessageBox.Show("⚠ Please select an item to update."); return;
+            }
             if (PurchaseDetail.ProductList.Count <= 0)
             {
                 MessageBox.Show("Please select product!");
@@ -333,6 +337,7 @@ namespace MartManagementSystem
             if (dgvData.Rows.Count <= 0) return;
             if (dgvData.CurrentRow == null) return;
             int id = Convert.ToInt32(dgvData.CurrentRow.Cells["PurchaseId"].Value);
+            PurchaseDetail.GetPurchaseDetailsByPurchaseId(id);
             DialogResult result = MessageBox.Show("Are you sure You want add into Inventory?", "Add Inventory", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {

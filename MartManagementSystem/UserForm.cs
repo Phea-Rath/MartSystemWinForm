@@ -179,7 +179,10 @@ namespace MartManagementSystem
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (txtId.Text == "") return;
+            if (txtId.Text.Equals(""))
+            {
+                MessageBox.Show("⚠ Please select an item to update."); return;
+            }
 
             string conPass = txtConPass.Text;
             string Pass = txtPass.Text;
@@ -250,5 +253,6 @@ namespace MartManagementSystem
         {
             ClearField();
         }
+
     }
 }

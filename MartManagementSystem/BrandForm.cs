@@ -91,6 +91,7 @@ namespace MartManagementSystem
 
         private void btnUp_Click(object sender, EventArgs e)
         {
+            if (txtId.Text.Equals("")) { MessageBox.Show("⚠ Please select an item to update."); return; }
             int id = int.Parse(txtId.Text);
             string name = txtName.Text;
             DateTime dateTime = DateTime.Now;

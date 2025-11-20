@@ -90,7 +90,7 @@ namespace MartManagementSystem
 
         private void btnUp_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtName.Text))
+            if (string.IsNullOrWhiteSpace(txtId.Text))
             {
                 MessageBox.Show("⚠ Please select an item to update.");
                 return;

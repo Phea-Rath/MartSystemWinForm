@@ -39,8 +39,8 @@ namespace MartManagementSystem
             InitializeComponent();
             dashboardForm = new DashboardForm(this);
             purchaseForm = new PurchaseForm(supplierForm);
-            inventoryForm = new InventoryForm(purchaseForm);
             productForm = new ProductForm(categoryForm,brandForm,sizeForm);
+            inventoryForm = new InventoryForm(purchaseForm,productForm);
             orderForm = new OrderForm(purchaseForm,inventoryForm);
             orderListForm = new OrderList(orderForm);
             userForm = new UserForm(roleForm);

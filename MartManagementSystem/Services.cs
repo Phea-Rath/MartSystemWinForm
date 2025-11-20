@@ -15,7 +15,7 @@ namespace MartManagementSystem
             Form alert = new Form();
             alert.StartPosition = FormStartPosition.Manual;
             alert.FormBorderStyle = FormBorderStyle.None;
-            alert.BackColor = Color.White;
+            alert.BackColor = Color.DodgerBlue;
             alert.Size = new Size(300, 80);
             alert.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 320, 20);
             alert.Padding = new Padding(5, 5, 5, 5);
@@ -23,11 +23,13 @@ namespace MartManagementSystem
             Label title = new Label();
             title.Text = "Information";
             title.Font = new Font("Arial", 10, FontStyle.Bold);
+            title.ForeColor = Color.White;
             title.Dock = DockStyle.Top;
             title.TextAlign = ContentAlignment.TopLeft;
 
             Label lbl = new Label();
             lbl.Text = msg;
+            lbl.ForeColor = Color.White;
             lbl.Dock = DockStyle.Fill;
             lbl.TextAlign = ContentAlignment.MiddleCenter;
 

@@ -90,5 +90,6 @@ namespace MartManagementSystem
             RefreshListProduct.Invoke(this, e);
             setField();
         }
+
     }
 }

@@ -1049,7 +1049,7 @@
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(179, 34);
             this.btnPay.TabIndex = 3;
-            this.btnPay.Text = "Pay ($700,99)";
+            this.btnPay.Text = "Pay";
             this.btnPay.UseVisualStyleBackColor = false;
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
@@ -1083,12 +1083,14 @@
             // btnOrderList
             // 
             this.btnOrderList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOrderList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnOrderList.ForeColor = System.Drawing.Color.White;
             this.btnOrderList.Location = new System.Drawing.Point(729, 32);
             this.btnOrderList.Name = "btnOrderList";
             this.btnOrderList.Size = new System.Drawing.Size(75, 23);
             this.btnOrderList.TabIndex = 6;
             this.btnOrderList.Text = "Order List";
-            this.btnOrderList.UseVisualStyleBackColor = true;
+            this.btnOrderList.UseVisualStyleBackColor = false;
             this.btnOrderList.Click += new System.EventHandler(this.btnOrderList_Click);
             // 
             // flpCards

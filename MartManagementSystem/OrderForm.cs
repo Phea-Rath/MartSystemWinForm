@@ -224,6 +224,10 @@ namespace MartManagementSystem
                     // Show all
 
                     LoadProducts(InventoryDetail.saleList);
+                }else if (b.CategoryName == "All")
+                {
+                    LoadProducts(InventoryDetail.saleList);
+
                 }
                 else
                 {
@@ -419,6 +423,11 @@ namespace MartManagementSystem
                 Button btn = CreateCategory(c);
                 flpCat.Controls.Add(btn);
             }
+            Category cat = new Category() { 
+                CategoryName="All",
+            };
+            Button btn1 = CreateCategory(cat);
+            flpCat.Controls.Add(btn1);
         }
 
 

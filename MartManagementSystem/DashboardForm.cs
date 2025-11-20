@@ -31,11 +31,11 @@ namespace MartManagementSystem
         private void LoadData()
         {
             decimal total = TotalOfSale();
-            lblSale.Text = "$"+total.ToString();
+            lblSale.Text = total.ToString("$0.00");
             int quenInv = TotalOfInventory();
             lblInv.Text = quenInv.ToString() + " in stock";
             decimal purchase = TotalOfPurchase();
-            lblPur.Text = "$"+purchase.ToString();
+            lblPur.Text = "$"+purchase.ToString("N2");
             int supplier = TotalOfSupplier();
             lblSup.Text = supplier.ToString();
             var ProList = PopularSale();
@@ -79,7 +79,7 @@ namespace MartManagementSystem
             {
                 int res = Convert.ToInt32(cmd.ExecuteScalar());
                 int resOrder = Convert.ToInt32(cmdOrder.ExecuteScalar());
-                if (res > 0&&resOrder>0)
+                if (res > 0)
                 {
                     return res - resOrder;
                 }
